@@ -109,8 +109,8 @@ const CONFIG = {
                   ecology while developing skills in ecological observation, species 
                   identification, and scientific field methods."
     // },
-
-                        },
+                     
+       },
     // Add high school, study abroad, certificate programs, etc. here
     // {
     //   school: "The Columbus School - Medellin, Colombia",
@@ -167,7 +167,7 @@ const CONFIG = {
                and public land ownership to support evidence-based planning and community engagement."
     },
 
-                      {
+    {
       role:    "Spatial Analysis Lab Intern",
       org:     "Spatial Analysis Lab, University of Richmond",
       years:   "Spring 2026",
@@ -180,7 +180,7 @@ const CONFIG = {
                contributing to a collaborative environment that strengthened students' confidence in using geospatial technologies."
     },
 
-                      {
+    {
       role:    "Teaching Assitant",
       org:     "Latin American, Latino, & Iberian Studies, University of Richmond",
       years:   "2023 - 2025",
