@@ -81,7 +81,7 @@ const CONFIG = {
   education: [
     {
       school: "University of Richmond",
-      degree: "B.A., Environmental Studies and Geography with a minor in Data Science & Statistics",
+      degree: "B.S., Environmental Studies and Geography with a minor in Data Science & Statistics",
       year:   "Expected May 2027",
       note:   ""
     },
@@ -181,19 +181,19 @@ const CONFIG = {
   skillGroups: [
     {
       label: "Desktop GIS",
-      skills: ["ArcGIS Pro", "QGIS", "ArcGIS Online"]
+      skills: ["ArcGIS Pro", "QGIS", "ArcGIS Online", "ENVI", "Google Earth Engine"]
     },
     {
       label: "Programming",
       skills: ["Python", "R", "SQL", "JavaScript (basic)"]
     },
     {
-      label: "Web mapping",
-      skills: ["Leaflet", "MapLibre GL JS", "Mapbox Studio"]
+      label: "Office Suites",
+      skills: ["Excel", "Google Suite", "Access"]
     },
     {
-      label: "Data & databases",
-      skills: ["PostGIS", "Pandas", "GeoPandas", "Tableau"]
+      label: "Editing",
+      skills: ["Adobe Illustrator", "Adobe Photoshop", "InkScape"]
     },
   ],
  
