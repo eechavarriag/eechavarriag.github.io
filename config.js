@@ -30,7 +30,7 @@ const CONFIG = {
   linkedin: "https://linkedin.com/in/eugenia-echavarria",
   website:  "",   // leave as "" to hide
 
-  headshot: "images/headshot.svg",
+  headshot: "images/headshot.jpg",
 
 
   // =========================================================
@@ -49,25 +49,28 @@ const CONFIG = {
   // To split into paragraphs, use \n\n between them.
   // =========================================================
 
-  longBio: `I am a senior at the University of Richmond studying Geography
-            and Data Science. My work focuses on using open spatial data
-            to answer questions that communities are actually asking.
+  longBio: `I am a senior at the University of Richmond majoring in 
+            Environmental Studies and Geography with a minor in Data Science 
+            and Statistics. I am passionate about using GIS, remote sensing, 
+            and spatial analysis to better understand environmental challenges 
+            and support more sustainable communities.
 
-            In 2024 I interned with the City of Richmond's Office of
-            Sustainability, where I built a series of tree-equity
-            dashboards now used by neighborhood groups to advocate for
-            plantings on underserved blocks. I have also worked on a
-            statistical analysis of margins of error in American
-            Community Survey data, a project I am co-authoring with
-            two faculty members at UR.
+            Since my freshman year, I have conducted research on development in 
+            the Amazon rainforest, examining how illegal road expansion influences 
+            watersheds, deforestation, land surface temperature, evapotranspiration, 
+            and other environmental processes. My research has been presented to 
+            government officials, embassies, and representatives of the United Nations 
+            in Peru.
 
-            Outside of GIS, I write a small newsletter about urban
-            history in the upper South, and I am slowly teaching
-            myself to make decent sourdough.
+            Most recently, I interned with the City of Ann Arbor's Office of Sustainability 
+            and Innovations, where I developed a series of urban heat island dashboards 
+            to identify neighborhoods most vulnerable to extreme summer heat. The dashboards 
+            were presented to the City's Parks and Forestry Department to help inform greening 
+            strategies and future tree-planting efforts.
 
-            I am graduating in May 2026 and am looking for full-time
-            roles in spatial analysis, planning support, or applied
-            research.`,
+            I will graduate in May 2027 and am interested in graduate study or full-time 
+            opportunities in spatial analysis, urban planning, sustainability, and applied 
+            environmental research`,
 
 
   // =========================================================
@@ -78,9 +81,9 @@ const CONFIG = {
   education: [
     {
       school: "University of Richmond",
-      degree: "B.A., Geography & Data Science",
-      year:   "Expected May 2026",
-      note:   "Honors thesis on canopy equity in Richmond"
+      degree: "B.A., Environmental Studies and Geography",
+      year:   "Expected May 2027",
+      note:   ""
     },
     // Add high school, study abroad, certificate programs, etc. here
     // {
