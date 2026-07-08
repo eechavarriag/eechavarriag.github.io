@@ -216,15 +216,14 @@ const CONFIG = {
   projects: [
  
     {
-      slug:        "tree-equity",
-      title:       "Tree Equity in Jackson Ward",
-      year:        "2025",
-      type:        "Community Mapping",
-      thumbnail:   "images/projects/tree-equity-thumb.svg",
-      blurb:       `A block-by-block analysis of canopy gaps in a historically
-                    redlined Richmond neighborhood, built with the Historic
-                    Jackson Ward Association.`,
-      tags:        ["ArcGIS Pro", "Python", "MapLibre", "Community-Engaged"],
+      slug:        "watershed-impacts",
+      title:       "Road Building Impacts on the Rivers and Watersheds of the Yurúa-Juruá Amazon Borderlands",
+      year:        "2024",
+      type:        "CLand Use & Land Cover Analysis",
+      thumbnail:   "images/projects/watershedmapfullextent.jpg",
+      blurb:       `A spatial analysis of illegal road development in the Peruvian Amazon, measuring its impacts 
+                    on watersheds, rivers, and environmentally significant landscapes to support conservation efforts.`,
+      tags:        ["ArcGIS Pro", "Remote Sensing", "Hydrology", "Environmental Monitoring"],
       detailPage:  "project-tree-equity.html",
       featured:    true,
     },
