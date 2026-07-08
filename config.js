@@ -86,24 +86,24 @@ const CONFIG = {
       note:   ""
     },
     // Add high school, study abroad, certificate programs, etc. here
-    // {
-    //   school: "DIS Copenhagen Study Abroad - Copenhagen, Denmark",
-    //   degree: "Polar Biology and Strategies for Urban Livability",
-    //   year:   "Fall 2025",
-    //   note:   "Completed coursework in Polar Biology and Urban Planning, conducting field research on Arctic ecosystems in northern Iceland and studying Copenhagen's sustainable urban design, green infrastructure, bicycle and public transit systems, climate adaptation, and land-use planning."
-    // },
-    // {
-    //   school: "University of Miami - Miami, FL",
-    //   degree: "Tropical Marine Biology and Life in the Sea",
-    //   year:   "Summer 2022",
-    //   note:   "Completed college-level coursework in Tropical Marine Biology and Life in the Sea, earning an A+ and A, respectively. Combined classroom learning with hands-on fieldwork investigating tropical marine ecosystems, coral reefs, marine biodiversity, and coastal ecology while developing skills in ecological observation, species identification, and scientific field methods."
-    // },
-    // {
-    //   school: "The Columbus School - Medellin, Colombia",
-    //   degree: "High School Diploma y Bachiller Académico",
-    //   year:   "August 2009 - June 2023",
-    //   note:   "Completed a rigorous college-preparatory curriculum with Advanced Placement coursework in Biology, Environmental Science, Chemistry, Physics, Psychology, and Spanish Language. Developed a strong interdisciplinary foundation in the sciences while engaging in an internationally focused education that emphasized global perspectives, critical thinking, cross-cultural collaboration, and real-world problem solving."
-    // },
+     {
+      school: "DIS Copenhagen Study Abroad - Copenhagen, Denmark",
+      degree: "Polar Biology and Strategies for Urban Livability",
+      year:   "Fall 2025",
+      note:   "Completed coursework in Polar Biology and Urban Planning, conducting field research on Arctic ecosystems in northern Iceland and studying Copenhagen's sustainable urban design, green infrastructure, bicycle and public transit systems, climate adaptation, and land-use planning."
+    },
+     {
+       school: "University of Miami - Miami, FL",
+       degree: "Tropical Marine Biology and Life in the Sea",
+       year:   "Summer 2022",
+       note:   "Completed college-level coursework in Tropical Marine Biology and Life in the Sea, earning an A+ and A, respectively. Combined classroom learning with hands-on fieldwork investigating tropical marine ecosystems, coral reefs, marine biodiversity, and coastal ecology while developing skills in ecological observation, species identification, and scientific field methods."
+     },
+     {
+       school: "The Columbus School - Medellin, Colombia",
+       degree: "High School Diploma y Bachiller Académico",
+       year:   "August 2009 - June 2023",
+       note:   "Completed a rigorous college-preparatory curriculum with Advanced Placement coursework in Biology, Environmental Science, Chemistry, Physics, Psychology, and Spanish Language. Developed a strong interdisciplinary foundation in the sciences while engaging in an internationally focused education that emphasized global perspectives, critical thinking, cross-cultural collaboration, and real-world problem solving."
+     },
   ],
  
  
