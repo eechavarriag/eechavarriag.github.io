@@ -21,13 +21,13 @@ const CONFIG = {
   // BASICS — name, contact, headshot
   // =========================================================
 
-  name: "Jane Cartographer",
-  tagline: "GIS Analyst & Community-Engaged Cartographer",
+  name: "Eugenia Echavarria",
+  tagline: "Environmental Studies, Geography and Data Science and Statistics Student",
   location: "Richmond, Virginia",
 
-  email:    "jane.cartographer@example.com",
-  github:   "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  email:    "eugenia.echavarria@richmond.edu",
+  github:   "https://github.com/eechavarriag",
+  linkedin: "https://linkedin.com/in/eugenia-echavarria",
   website:  "",   // leave as "" to hide
 
   headshot: "images/headshot.svg",
@@ -38,8 +38,8 @@ const CONFIG = {
   // 1-2 sentences. Keep it punchy.
   // =========================================================
 
-  shortBio: `Senior at the University of Richmond studying Geography
-             and Data Science, focused on open spatial data, community
+  shortBio: `Senior at the University of Richmond majoring in Environmental Studies and Geography
+             and minoring in Data Science and Statistics, focused on open spatial data, community
              cartography, and making maps that answer real questions.`,
 
 
