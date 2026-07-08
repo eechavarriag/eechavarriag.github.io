@@ -49,7 +49,7 @@ const CONFIG = {
   // To split into paragraphs, use \n\n between them.
   // =========================================================
 
-  longBio: `I am a senior at the University of Richmond majoring in 
+  longBio: `I am a senior at the University of Richmond majoring in
             Environmental Studies and Geography with a minor in Data Science 
             and Statistics. I am passionate about using GIS, remote sensing, 
             and spatial analysis to better understand environmental challenges 
@@ -81,7 +81,7 @@ const CONFIG = {
   education: [
     {
       school: "University of Richmond",
-      degree: "B.A., Environmental Studies and Geography",
+      degree: "B.A., Environmental Studies and Geography with a minor in Data Science & Statistics",
       year:   "Expected May 2027",
       note:   ""
     },
