@@ -219,12 +219,12 @@ const CONFIG = {
       slug:        "watershed-impacts",
       title:       "Road Building Impacts on the Rivers and Watersheds of the Yurúa-Juruá Amazon Borderlands",
       year:        "2024",
-      type:        "CLand Use & Land Cover Analysis",
+      type:        "Land Use & Land Cover Analysis",
       thumbnail:   "images/projects/watershedmapfullextent.jpg",
       blurb:       `A spatial analysis of illegal road development in the Peruvian Amazon, measuring its impacts 
                     on watersheds, rivers, and environmentally significant landscapes to support conservation efforts.`,
       tags:        ["ArcGIS Pro", "Remote Sensing", "Hydrology", "Environmental Monitoring"],
-      detailPage:  "project-tree-equity.html",
+      detailPage:  "project-watersheds.html",
       featured:    true,
     },
  
