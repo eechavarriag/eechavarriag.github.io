@@ -261,16 +261,17 @@ const CONFIG = {
  
     // Example of a non-featured project (will appear on /projects only):
     {
-      slug:        "sanborn-mosaic",
-      title:       "Stitching the Sanborn Atlases of Richmond",
-      year:        "2023",
-      type:        "Historical GIS",
-      thumbnail:   "images/projects/sanborn-mosaic-thumb.svg",
-      blurb:       `Georeferenced and mosaicked a set of 1905 Sanborn fire
-                    insurance maps into a single cloud-optimized GeoTIFF
-                    for use in archival research.`,
-      tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"],
-      detailPage:  "project-sanborn-mosaic.html",
+      slug:        "medellin-ndvi",
+      title:       "Man-made green: An analysis of urban planning and sustainability in Medellín (Colombia)",
+      year:        "2024",
+      type:        "Remote Sensing",
+      thumbnail:   "images/projects/ndvi-medellin-thumb.jpg",
+      blurb:       `A multi-temporal NDVI analysis comparing vegetation
+                    patterns across Medellín between 2015–2016 and
+                    2020–2021 to evaluate changes associated with urban
+                    greening initiatives.`,
+      tags:        ["ArcGIS Pro", "ENVI", "Google Earth Engine", "Urban Sustainability"],
+      detailPage:  "project-medellin-ndvi.html",
       featured:    false,
     },
  
