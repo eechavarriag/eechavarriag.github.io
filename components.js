@@ -50,13 +50,11 @@
 
   // ---- Header (shared across all pages) -------------------------
 
-  function renderHeader() {
+function renderHeader() {
     const host = $('#site-header');
     if (!host) return;
-
     const path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
     function active(file) { return path === file ? 'is-active' : ''; }
-
     host.innerHTML =
       '<div class="header-inner">' +
         '<a class="header-mark" href="index.html">' +
@@ -66,6 +64,7 @@
         '<nav class="header-nav">' +
           '<a href="index.html"     class="' + active('index.html') + '">Home</a>' +
           '<a href="projects.html"  class="' + active('projects.html') + '">Work</a>' +
+          '<a href="map-gallery.html" class="' + active('map-gallery.html') + '">Map Gallery</a>' +
           '<a href="about.html"     class="' + active('about.html') + '">About</a>' +
           '<a href="contact.html"   class="' + active('contact.html') + '">Contact</a>' +
         '</nav>' +
