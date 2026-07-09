@@ -233,7 +233,7 @@ const CONFIG = {
       title:       "Mapping Urban Heat and Tree Equity in Ann Arbor",
       year:        "2026",
       type:        "GIS & Remote Sensing",
-      thumbnail:   "images/projects/ann-arbor-heat-thumb.jpg",
+      thumbnail:   "images/projects/ann-arbor-heat-thumb-v2.jpg",
       blurb:       `Interactive GIS analysis of urban heat island patterns 
                     in Ann Arbor using Landsat-derived land surface temperature, 
                     tree canopy, impervious surface, demographic, and municipal 
