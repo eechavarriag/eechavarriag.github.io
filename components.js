@@ -271,12 +271,13 @@ function renderHeader() {
 
   // ---- Run everything ------------------------------------------
 
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     renderHeader();
     renderFooter();
     renderTitle();
     renderBasics();
     renderProjects();
+    renderMapGallery();
     renderLongBio();
     renderEducation();
     renderExperience();
