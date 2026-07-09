@@ -239,7 +239,7 @@ const CONFIG = {
                     tree canopy, impervious surface, demographic, and municipal 
                     datasets to identify priority areas for heat mitigation and 
                     urban forestry interventions.`,
-      tags:        ["ArcGIS Pro", "ArcGIS Online", "Google Earth Engine", "Remote Sensing", Urban Heat Island],
+      tags:        ["ArcGIS Pro", "ArcGIS Online", "Google Earth Engine", "Remote Sensing", "Urban Heat Island"],
       detailPage:  "project-ann-arbor-heat.html",
       featured:    true,
     },
