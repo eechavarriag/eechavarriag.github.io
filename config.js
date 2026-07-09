@@ -216,19 +216,6 @@ const CONFIG = {
   projects: [
  
     {
-      slug:        "watershed-impacts",
-      title:       "Road Building Impacts on the Rivers and Watersheds of the Yurúa-Juruá Amazon Borderlands",
-      year:        "2024",
-      type:        "Land Use & Land Cover Analysis",
-      thumbnail:   "images/projects/watershedmapfullextent.jpg",
-      blurb:       `A spatial analysis of illegal road development in the Peruvian Amazon, measuring its impacts 
-                    on watersheds, rivers, and environmentally significant landscapes to support conservation efforts.`,
-      tags:        ["ArcGIS Pro", "Remote Sensing", "Hydrology", "Environmental Monitoring"],
-      detailPage:  "project-watersheds.html",
-      featured:    true,
-    },
- 
-    {
       slug:        "urban-heat-ann-arbor",
       title:       "Mapping Urban Heat and Tree Equity in Ann Arbor",
       year:        "2026",
@@ -243,18 +230,32 @@ const CONFIG = {
       detailPage:  "project-ann-arbor-heat.html",
       featured:    true,
     },
- 
+
+     
     {
-      slug:        "kde-traffic",
-      title:       "Where the Crashes Cluster",
+      slug:        "roads-climate-change",
+      title:       "Roads to Climate Change: Secondary Roads in Acre-Amazonas, Brazil",
+      year:        "2025",
+      type:        "Climate & Remote Sensing",
+      thumbnail:   "images/projects/roads-climate-thumb.jpg",
+      blurb:       `Three case studies of secondary road networks in the Brazilian Amazon, 
+                    measuring their impact on deforestation, degradation, land surface 
+                    temperature, and evapotranspiration from 2003 to 2024.`,
+      tags:      ["ArcGIS Pro", "Remote Sensing", "MODIS", "Climate Science"],
+      detailPage:  "project-roads-climate-change.html",
+      featured:    true,
+    },
+
+   {
+      slug:        "watershed-impacts",
+      title:       "Road Building Impacts on the Rivers and Watersheds of the Yurúa-Juruá Amazon Borderlands",
       year:        "2024",
-      type:        "Spatial Analysis",
-      thumbnail:   "images/projects/kde-traffic-thumb.svg",
-      blurb:       `A kernel density analysis of three years of
-                    traffic-accident data in Gainesville, Florida, with
-                    an interactive bandwidth control.`,
-      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
-      detailPage:  "project-kde-traffic.html",
+      type:        "Land Use & Land Cover Analysis",
+      thumbnail:   "images/projects/watershedmapfullextent.jpg",
+      blurb:       `A spatial analysis of illegal road development in the Peruvian Amazon, measuring its impacts 
+                    on watersheds, rivers, and environmentally significant landscapes to support conservation efforts.`,
+      tags:        ["ArcGIS Pro", "Remote Sensing", "Hydrology", "Environmental Monitoring"],
+      detailPage:  "project-watersheds.html",
       featured:    true,
     },
  
