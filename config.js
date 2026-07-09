@@ -229,16 +229,18 @@ const CONFIG = {
     },
  
     {
-      slug:        "acs-uncertainty",
-      title:       "Hidden Uncertainty in ACS Health Data",
-      year:        "2025",
-      type:        "Spatial Statistics",
-      thumbnail:   "images/projects/acs-uncertainty-thumb.svg",
-      blurb:       `A simulation study showing how margins of error in
-                    American Community Survey estimates propagate through
-                    public-health risk models.`,
-      tags:        ["R", "GLM", "Monte Carlo", "Research"],
-      detailPage:  "project-acs-uncertainty.html",
+      slug:        "urban-heat-ann-arbor",
+      title:       "Mapping Urban Heat and Tree Equity in Ann Arbor",
+      year:        "2026",
+      type:        "GIS & Remote Sensing",
+      thumbnail:   "images/projects/ann-arbor-heat-thumb.jpg",
+      blurb:       `Interactive GIS analysis of urban heat island patterns 
+                    in Ann Arbor using Landsat-derived land surface temperature, 
+                    tree canopy, impervious surface, demographic, and municipal 
+                    datasets to identify priority areas for heat mitigation and 
+                    urban forestry interventions.`,
+      tags:        ["ArcGIS Pro", "ArcGIS Online", "Google Earth Engine", "Remote Sensing", Urban Heat Island],
+      detailPage:  "project-ann-arbor-heat.html",
       featured:    true,
     },
  
