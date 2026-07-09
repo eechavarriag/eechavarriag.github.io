@@ -1,0 +1,98 @@
+<svg viewBox="0 0 820 1330" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, 'Segoe UI', Arial, sans-serif">
+  <title>GIS Analysis Workflow: Secondary Roads and Climate Impact in the Amazon</title>
+  <desc>Five-stage pipeline: Data Collection, Road Digitization, Buffer Analysis, Statistical Analysis, and Output and Findings for a study of three secondary road networks in Acre-Amazonas, Brazil and their effects on deforestation, land surface temperature, and evapotranspiration.</desc>
+
+  <!-- Title block -->
+  <text x="410" y="45" text-anchor="middle" font-size="30" font-weight="700" fill="#124a72">GIS Analysis Workflow</text>
+  <text x="410" y="74" text-anchor="middle" font-size="16" fill="#33424f">Secondary Roads &amp; Climate Impact in the Amazon</text>
+  <text x="410" y="96" text-anchor="middle" font-size="13.5" fill="#55697a" font-style="italic">Acre&#8211;Amazonas, Brazil &#183; ABSAT, University of Richmond</text>
+
+  <!-- ===== CARD 1: Data Collection (140-340) ===== -->
+  <rect x="70" y="140" width="680" height="200" rx="14" fill="#eaf2f8" stroke="#cfe0ec" stroke-width="1.5"/>
+  <rect x="70" y="140" width="6" height="200" rx="3" fill="#1d5b8a"/>
+  <circle cx="140" cy="240" r="34" fill="#1d5b8a"/>
+  <polyline points="120,226 140,234 160,226" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="120,240 140,248 160,240" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="120,254 140,262 160,254" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="195" y="186" font-size="24" font-weight="700" fill="#123249">1. Data Collection</text>
+  <text x="195" y="214" font-size="15" fill="#33424f">&#8226; Landsat imagery (1985&#8211;2015) &amp; PLANET imagery (2016&#8211;2024)</text>
+  <text x="195" y="240" font-size="15" fill="#33424f">&#8226; MODIS evapotranspiration (500 m) &amp; land surface temp. (1 km)</text>
+  <text x="195" y="266" font-size="15" fill="#33424f">&#8226; 30 m Landsat deforestation &amp; degradation dataset</text>
+  <text x="195" y="292" font-size="15" fill="#33424f">&#8226; Land-use &amp; property data from CAR and RAISG</text>
+
+  <!-- Arrow 1 -->
+  <line x1="410" y1="340" x2="410" y2="372" stroke="#1d5b8a" stroke-width="3"/>
+  <polygon points="401,371 419,371 410,381" fill="#1d5b8a"/>
+
+  <!-- ===== CARD 2: Road Digitization (380-580) ===== -->
+  <rect x="70" y="380" width="680" height="200" rx="14" fill="#eaf2f8" stroke="#cfe0ec" stroke-width="1.5"/>
+  <rect x="70" y="380" width="6" height="200" rx="3" fill="#1d5b8a"/>
+  <circle cx="140" cy="480" r="34" fill="#1d5b8a"/>
+  <polyline points="118,494 130,468 148,486 162,462" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="118" cy="494" r="2.6" fill="#ffffff"/>
+  <circle cx="130" cy="468" r="2.6" fill="#ffffff"/>
+  <circle cx="148" cy="486" r="2.6" fill="#ffffff"/>
+  <circle cx="162" cy="462" r="2.6" fill="#ffffff"/>
+  <text x="195" y="426" font-size="24" font-weight="700" fill="#123249">2. Road Digitization</text>
+  <text x="195" y="454" font-size="15" fill="#33424f">&#8226; Manually digitized 3 secondary road networks in ArcGIS Pro</text>
+  <text x="195" y="480" font-size="15" fill="#33424f">&#8226; Fishbone (1,690 km), dendritic (180 km), skid trail (1,082 km)</text>
+  <text x="195" y="506" font-size="15" fill="#33424f">&#8226; Networks span Acre &amp; Amazonas, Brazil, 1985&#8211;2024</text>
+
+  <!-- Arrow 2 -->
+  <line x1="410" y1="580" x2="410" y2="612" stroke="#1d5b8a" stroke-width="3"/>
+  <polygon points="401,611 419,611 410,621" fill="#1d5b8a"/>
+
+  <!-- ===== CARD 3: Buffer Analysis (620-820) ===== -->
+  <rect x="70" y="620" width="680" height="200" rx="14" fill="#eaf2f8" stroke="#cfe0ec" stroke-width="1.5"/>
+  <rect x="70" y="620" width="6" height="200" rx="3" fill="#1d5b8a"/>
+  <circle cx="140" cy="720" r="34" fill="#1d5b8a"/>
+  <circle cx="140" cy="720" r="24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-dasharray="3,3"/>
+  <circle cx="140" cy="720" r="15" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-dasharray="3,3"/>
+  <circle cx="140" cy="720" r="6" fill="#ffffff"/>
+  <text x="195" y="666" font-size="24" font-weight="700" fill="#123249">3. Buffer Analysis</text>
+  <text x="195" y="694" font-size="15" fill="#33424f">&#8226; Built 1, 5, 10 &amp; 15 km buffers around each road network</text>
+  <text x="195" y="720" font-size="15" fill="#33424f">&#8226; Extracted ET, LST &amp; deforestation/degradation per buffer</text>
+  <text x="195" y="746" font-size="15" fill="#33424f">&#8226; Compared values from 2003 through 2024</text>
+
+  <!-- Arrow 3 -->
+  <line x1="410" y1="820" x2="410" y2="852" stroke="#1d5b8a" stroke-width="3"/>
+  <polygon points="401,851 419,851 410,861" fill="#1d5b8a"/>
+
+  <!-- ===== CARD 4: Statistical Analysis (860-1000) ===== -->
+  <rect x="70" y="860" width="680" height="140" rx="14" fill="#eaf2f8" stroke="#cfe0ec" stroke-width="1.5"/>
+  <rect x="70" y="860" width="6" height="140" rx="3" fill="#1d5b8a"/>
+  <circle cx="140" cy="930" r="34" fill="#1d5b8a"/>
+  <rect x="122" y="924" width="10" height="22" fill="#ffffff"/>
+  <rect x="145" y="912" width="10" height="34" fill="#ffffff"/>
+  <path d="M122,904 L155,904" stroke="#ffffff" stroke-width="1.6" fill="none"/>
+  <path d="M122,904 L122,908" stroke="#ffffff" stroke-width="1.6"/>
+  <path d="M155,904 L155,908" stroke="#ffffff" stroke-width="1.6"/>
+  <text x="137" y="901" text-anchor="middle" font-size="11" fill="#ffffff">*</text>
+  <text x="195" y="906" font-size="24" font-weight="700" fill="#123249">4. Statistical Analysis</text>
+  <text x="195" y="934" font-size="15" fill="#33424f">&#8226; Ran ANOVA with post-hoc Tukey tests per case study</text>
+  <text x="195" y="960" font-size="15" fill="#33424f">&#8226; Tested for significant differences in LST &amp; ET by buffer</text>
+
+  <!-- Arrow 4 -->
+  <line x1="410" y1="1000" x2="410" y2="1032" stroke="#1d5b8a" stroke-width="3"/>
+  <polygon points="401,1031 419,1031 410,1041" fill="#1d5b8a"/>
+
+  <!-- ===== CARD 5: Output & Findings (1040-1260) ===== -->
+  <rect x="70" y="1040" width="680" height="220" rx="14" fill="#eaf2f8" stroke="#cfe0ec" stroke-width="1.5"/>
+  <rect x="70" y="1040" width="6" height="220" rx="3" fill="#1d5b8a"/>
+  <circle cx="140" cy="1100" r="34" fill="#1d5b8a"/>
+  <circle cx="140" cy="1088" r="16" fill="#ffffff"/>
+  <rect x="137" y="1100" width="6" height="20" rx="2" fill="#ffffff"/>
+  <text x="195" y="1086" font-size="24" font-weight="700" fill="#123249">5. Output &amp; Findings</text>
+  <text x="195" y="1114" font-size="15" fill="#33424f">&#8226; Road impacts concentrated within 1 km in 2 of 3 networks</text>
+
+  <rect x="195" y="1140" width="255" height="70" rx="8" fill="#dceaf5" stroke="#1d5b8a" stroke-width="1.5"/>
+  <text x="322" y="1170" text-anchor="middle" font-size="18" font-weight="700" fill="#1d5b8a">3 Road Networks</text>
+  <text x="322" y="1194" text-anchor="middle" font-size="11.5" fill="#55697a">Fishbone &#183; Dendritic &#183; Skid Trail</text>
+
+  <rect x="470" y="1140" width="255" height="70" rx="8" fill="#dceaf5" stroke="#1d5b8a" stroke-width="1.5"/>
+  <text x="597" y="1170" text-anchor="middle" font-size="18" font-weight="700" fill="#1d5b8a">1 km Impact Zone</text>
+  <text x="597" y="1194" text-anchor="middle" font-size="11.5" fill="#55697a">Highest LST rise &amp; ET drop near roads</text>
+
+  <!-- Footer -->
+  <text x="410" y="1300" text-anchor="middle" font-size="12" fill="#55697a" font-style="italic">Lin, Echavarria, Spera, Salisbury &amp; Winiarski &#183; AAG 2026 Annual Meeting, San Francisco</text>
+</svg>
