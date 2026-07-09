@@ -50,11 +50,13 @@
 
   // ---- Header (shared across all pages) -------------------------
 
-function renderHeader() {
+  function renderHeader() {
     const host = $('#site-header');
     if (!host) return;
+
     const path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
     function active(file) { return path === file ? 'is-active' : ''; }
+
     host.innerHTML =
       '<div class="header-inner">' +
         '<a class="header-mark" href="index.html">' +
@@ -165,6 +167,26 @@ function renderHeader() {
   }
 
 
+  // ---- Map Gallery (standalone maps that aren't full case studies) --
+
+  function renderMapGallery() {
+    const host = $('[data-bind=mapGallery]');
+    if (!host || !Array.isArray(CONFIG.mapGallery)) return;
+    host.innerHTML = CONFIG.mapGallery.map(function (m) {
+      return (
+        '<figure class="gallery-card">' +
+          '<img src="' + escapeHTML(m.image) + '" alt="' + escapeHTML(m.title || '') + '" loading="lazy" />' +
+          '<figcaption>' +
+            '<h3>' + escapeHTML(m.title || '') + '</h3>' +
+            '<p class="gallery-meta">' + escapeHTML(m.course || '') + ' &middot; ' + escapeHTML(m.date || '') + '</p>' +
+            '<p>' + escapeHTML(m.description || '') + '</p>' +
+          '</figcaption>' +
+        '</figure>'
+      );
+    }).join('');
+  }
+
+
   // ---- About page sections (bio, education, experience, skills) ---
 
   function renderLongBio() {
@@ -271,7 +293,7 @@ function renderHeader() {
 
   // ---- Run everything ------------------------------------------
 
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     renderHeader();
     renderFooter();
     renderTitle();
