@@ -276,7 +276,20 @@ const CONFIG = {
     },
  
   ],
- 
+
+   // =========================================================
+// MAP GALLERY — standalone maps that aren't full case studies
+// =========================================================
+
+mapGallery: [
+  {
+    title:   "Map title here",
+    image:   "images/gallery/your-map-file.jpg",
+    caption: "A sentence or two describing what this map shows and how you made it.",
+    tags:    ["ArcGIS Pro", "Cartography"],
+  },
+  // Copy the block above and paste it again for each additional map.
+],
  
   // =========================================================
   // CONTACT PAGE — what to say on the contact page
