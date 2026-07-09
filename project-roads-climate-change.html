@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-page="Where the Crashes Cluster">Loading...</title>
+<!-- ============================================================ -->
+<!-- EDIT THIS: The page title that shows in the browser tab.     -->
+<!-- ============================================================ -->
+<title data-page="Roads to Climate Change: Secondary Roads in Acre-Amazonas, Brazil">Loading...</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,20 +15,161 @@
 <body>
 <header id="site-header" class="site-header"></header>
 <main>
+  <!-- ================================================================== -->
+  <!--  EDIT EVERYTHING BELOW. This whole file is one project's case      -->
+  <!--  study. The structure is: header, hero image, the story, methods,  -->
+  <!--  findings, tools, next steps, and a back link.                     -->
+  <!--                                                                    -->
+  <!--  To make a NEW project page: copy this whole file, rename it       -->
+  <!--  (e.g., project-your-name.html), and change everything.            -->
+  <!--                                                                    -->
+  <!--  Then make sure your config.js lists this filename as the          -->
+  <!--  project's "detailPage".                                           -->
+  <!-- ================================================================== -->
+  <!-- PROJECT HEAD -->
   <section class="project-head">
-    <p class="page-eyebrow">Case study</p>
-    <h1 class="page-title">Where the Crashes Cluster</h1>
-    <p class="project-subtitle">A kernel density analysis of traffic-accident data in Gainesville, Florida.</p>
+    <p class="page-eyebrow">Case study · 2026</p>
+    <h1 class="page-title">Roads to Climate Change: Three Case Studies of Secondary Roads in Acre-Amazonas, Brazil</h1>
+    <p class="project-subtitle">
+      Measuring how three secondary road networks in the Brazilian Amazon
+      have reshaped deforestation, degradation, land surface temperature,
+      and evapotranspiration between 2003 and 2024.
+    </p>
+    <ul class="project-meta-row">
+      <li><span class="meta-label">Role</span><span class="meta-value">Undergraduate Research Fellow, ABSAT</span></li>
+      <li><span class="meta-label">Partners</span><span class="meta-value">ABSAT, University of Richmond</span></li>
+      <li><span class="meta-label">Collaborators</span><span class="meta-value">Lin, Jasmine</span></li>
+      <li><span class="meta-label">Supervisor</span><span class="meta-value">Salisbury, David</span></li>
+      <li><span class="meta-label">Timeline</span><span class="meta-value">2024 – 2026</span></li>
+      <li><span class="meta-label">Tools</span><span class="meta-value">ArcGIS Pro, Landsat, PLANET, MODIS</span></li>
+    </ul>
   </section>
+  <!-- HERO IMAGE / MAP -->
+  <!-- This is the showcase image at the top. Use your best map. -->
+  <!-- For an embedded interactive map, see the iframe snippet in EXTENSIONS.md -->
   <section class="project-hero">
     <figure>
-      <img src="images/projects/kde-traffic-thumb.svg" alt="Where the Crashes Cluster" />
+      <img src="images/projects/roads-climate-study-area.jpg"
+           alt="Map of three secondary road networks in Acre and Amazonas, Brazil: a fishbone network near Cruzeiro do Sul, a dendritic network from Envira, and a skid trail network on private land." />
+      <figcaption>
+        The three case-study road networks examined in this study: a
+        fishbone network (1,690 km) near Cruzeiro do Sul, a dendritic
+        network (180 km) originating from the settlement of Envira, and a
+        skid trail network (1,082 km) built for selective logging.
+      </figcaption>
     </figure>
   </section>
+  <!-- THE STORY (problem -> approach -> what i found) -->
   <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
-    <p>This case study is still being written.</p>
+    <h2 class="prose-h2">The question</h2>
+    <p>
+      The Amazon rainforest stores the equivalent of 20-25 years of global
+      carbon emissions, recycles roughly half of the precipitation across
+      the Amazon River Basin through evapotranspiration, and helps cool
+      the region's land surface. Road-building is one of the clearest
+      drivers of the deforestation and forest fragmentation that put
+      those functions at risk, and in the Brazilian Amazon every kilometer
+      of official, first-cut road is associated with roughly 49 more
+      kilometers of secondary roads built by non-state actors for
+      resource extraction, largely without regulation.
+    </p>
+    <p>
+      Prior research shows that deforestation is heavily concentrated
+      near roads and rivers, and that deforested, fragmented land tends
+      to run hotter and drier, reinforcing the dry seasons that further
+      stress the forest. What was less clear was how this plays out
+      across different kinds of secondary road networks, and whether
+      forest regrowth after logging can meaningfully reverse the effect.
+      This project examined three contrasting networks in Acre and
+      Amazonas, Brazil, to find out.
+    </p>
+    <h2 class="prose-h2">What I did</h2>
+    <p>
+      Working with Jasmine Lin and the Amazon Borderlands Spatial Analysis Team (ABSAT), 
+      I analyzed the environmental impacts of road development using GIS and remote sensing. 
+      I created buffer analyses, processed and exported satellite-derived raster datasets in 
+      Google Earth Engine, and performed spatial analyses in ArcGIS Pro to evaluate changes 
+      in evapotranspiration, land surface temperature, and deforestation along the Brazil–Peru border. 
+      This was done using ArcGIS Pro using Landsat imagery (1985–2015, 30 m resolution) and 
+      PLANET imagery (2016–2024, 4.77 m resolution) across three case studies: 
+      a 1,690 km fishbone network branching off the BR-364 near Cruzeiro do Sul, 
+      a 180 km dendritic network that grew from the independent settlement of
+      Envira, and a 1,082 km skid trail network built for selective
+      logging on a single privately owned parcel between 2015 and 2022.
+    </p>
+    <p>
+      For each network, we built 1, 5, 10, and 15 km buffers and used them
+      to extract land surface temperature (MODIS, 1 km resolution),
+      evapotranspiration (MODIS, 500 m resolution), and deforestation and
+      degradation (a 30 m Landsat-based dataset) from 2003 through 2024.
+      Land-use and property boundary data came from Brazil's Cadastro
+      Ambiental Rural (CAR) and the Rede Amazônica de Informação
+      Socioambiental Georreferenciada (RAISG). We then ran an ANOVA with
+      post-hoc Tukey tests for each case study to determine whether
+      temperature and evapotranspiration differed significantly between
+      buffer distances in 2003 and in 2024.
+    </p>
+    <!-- Inline supporting image -->
+    <figure class="prose-figure">
+      <img src="images/projects/roads-climate-gis-workflow-diagram.svg"
+           alt="GIS workflow diagram showing data collection, road digitization, buffer analysis, statistical analysis, and output for the secondary roads and climate impact study." />
+      <figcaption>The analysis pipeline.</figcaption>
+    </figure>
+    <h2 class="prose-h2">What I found</h2>
+    <p>
+      In the fishbone and dendritic networks, the impact of the roads was
+      concentrated within 1 km: that buffer alone accounted for roughly
+      70 km² of degradation and close to 200 km² of deforestation in the
+      fishbone case, more than the sum of all the wider buffers combined.
+      Land surface temperature within 1 km rose more sharply than in
+      farther buffers between 2003 and 2024, while evapotranspiration
+      dropped significantly closer to the roads even as it declined
+      Amazon-wide.
+    </p>
+    <p>
+      The skid trail network told a different story. It showed almost no
+      significant difference in temperature or evapotranspiration between
+      buffer distances, suggesting that the secondary forest regrowth
+      that followed the end of active logging may, over time, blunt the
+      network's lasting environmental footprint. Across all three case
+      studies, temperature rose and evapotranspiration fell overall from
+      2003 to 2024, consistent with broader Amazon-wide climate trends,
+      but the sharpest, most road-specific signal appeared within 1 km of
+      active secondary roads.
+    </p>
+    <h2 class="prose-h2">What I learned</h2>
+    <p>
+      Comparing three structurally different road networks side by side
+      taught me how much the story changes depending on what is actually
+      happening on the ground, not just the presence of a road. I learned
+      to work across datasets at very different resolutions, from 4.77 m
+      PLANET imagery down to 500 m MODIS composites, and to recognize
+      when a result (like the deforestation pattern near the Rio Envira)
+      is being driven by a confounding variable rather than the road
+      itself. Presenting alongside faculty and student collaborators at
+      AAG also reinforced how important it is to communicate uncertainty
+      honestly rather than flattening three distinct case studies into
+      one tidy conclusion.
+    </p>
   </section>
+  <!-- LINKS / DELIVERABLES -->
+  <section class="project-links-section">
+    <div class="section-head">
+      <span class="section-num">→</span>
+      <h2 class="section-title">Deliverables</h2>
+    </div>
+    <ul class="link-list">
+      <li>
+        <a href="#" class="link-primary">Research Poster →</a>
+        <span class="link-note">Presented at the American Association of Geographers (AAG) 2026 Annual Meeting, San Francisco, CA.</span>
+      </li>
+      <li>
+        <a href="#" class="link-primary">Works Cited →</a>
+        <span class="link-note">Full reference list for the study, linked via QR code on the poster.</span>
+      </li>
+    </ul>
+  </section>
+  <!-- BACK TO PORTFOLIO -->
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
   </section>
