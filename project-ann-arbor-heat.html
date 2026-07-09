@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-page="ACS Uncertainty">Loading...</title>
+
+<!-- ============================================================ -->
+<!-- EDIT THIS: The page title that shows in the browser tab.     -->
+<!-- ============================================================ -->
+<title data-page="Mapping Urban Heat and Tree Equity in Ann Arbor">Loading...</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,36 +19,167 @@
 <header id="site-header" class="site-header"></header>
 
 <main>
+
+  <!-- ================================================================== -->
+  <!--  EDIT EVERYTHING BELOW. This whole file is one project's case      -->
+  <!--  study. The structure is: header, hero image, the story, methods,  -->
+  <!--  findings, tools, next steps, and a back link.                     -->
+  <!--                                                                    -->
+  <!--  To make a NEW project page: copy this whole file, rename it       -->
+  <!--  (e.g., project-your-name.html), and change everything.            -->
+  <!--                                                                    -->
+  <!--  Then make sure your config.js lists this filename as the          -->
+  <!--  project's "detailPage".                                           -->
+  <!-- ================================================================== -->
+
+
+  <!-- PROJECT HEAD -->
   <section class="project-head">
-    <p class="page-eyebrow"> Urban Heat Island Assessment · 2026</p>
-    <h1 class="page-title">Hidden Uncertainty in ACS Health Data</h1>
+    <p class="page-eyebrow">Urban Heat Island Analysis · 2026</p>
+    <h1 class="page-title">Mapping Urban Heat and Tree Equity in Ann Arbor</h1>
     <p class="project-subtitle">
-      A simulation study of how margins of error in American Community
-      Survey estimates propagate through county-level health risk models.
+      Using GIS and remote sensing to identify the neighborhoods most vulnerable 
+      to extreme summer heat and guide the City of Ann Arbor's tree-planting and 
+      greening priorities.
     </p>
+    <ul class="project-meta-row">
+      <li><span class="meta-label">Role</span><span class="meta-value">GIS Intern</span></li>
+      <li><span class="meta-label">Partners</span><span class="meta-value"> City of Ann Arbor, Office of Sustainability & Innovations </span></li>
+      <li><span class="meta-label">Timeline</span><span class="meta-value"> Summer 2026 </span></li>
+      <li><span class="meta-label">Tools</span><span class="meta-value"> ArcGIS Pro, ArcGIS Online, Google Earth Engine </span></li>
+    </ul>
   </section>
 
-  <section class="project-hero">
-    <figure>
-      <img src="images/projects/ann-arbor-heat-thumb.jpg" alt="Forest plot of health rate estimates" />
-      <figcaption>Forest plot of estimate uncertainty across seven health indicators.</figcaption>
-    </figure>
-  </section>
 
+  <!-- HERO IMAGE / MAP -->
+  <!-- This is the showcase image at the top. Use your best map. -->
+  <!-- For an embedded interactive map, see the iframe snippet in EXTENSIONS.md -->
+<section class="project-hero">
+  <figure>
+    <iframe
+      src="https://www.arcgis.com/apps/dashboards/51aa3bef9d0f4ea3b31f28894afe98f7"
+      style="width: 100%; height: 700px; border: 0; display: block;"
+      title="Interactive dashboard of urban heat island patterns across Ann Arbor">
+    </iframe>
+    <figcaption>
+      Click and drag to explore. Land surface temperature layered with
+      tree canopy and impervious surface data, used to identify priority
+      areas for heat mitigation across Ann Arbor.
+    </figcaption>
+  </figure>
+</section>
+
+
+  <!-- THE STORY (problem -> approach -> what i found) -->
   <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
+
+    <h2 class="prose-h2">The question</h2>
     <p>
-      This case study is still being written. In the meantime, see the
-      preprint and the code repository linked below.
+    Urban heat islands raise summer temperatures unevenly across a city, and the 
+    neighborhoods that experience the highest heat are often those with the least 
+    tree canopy and the fewest resources to adapt. The City of Ann Arbor's Office 
+    of Sustainability and Innovations needed a clearer, spatial picture of where 
+    extreme heat, low canopy, and vulnerable populations overlap, so that limited 
+    tree-planting and greening investments could be directed where they would have 
+    the greatest impact.
+
+    My work focused on building that spatial picture at multiple scales, from individual 
+    census blocks up to whole neighborhoods, so that both technical staff and the public 
+    could explore the patterns and use them in planning conversations.
+      
     </p>
+    <p>
+    This project examined the spatial drivers of the urban heat island effect in 
+    Ann Arbor, Michigan by integrating Landsat-derived land surface temperature, tree canopy, 
+    impervious surface, demographic, and municipal GIS datasets. Through spatial analysis 
+    and interactive web dashboards, the project identified priority areas for tree planting 
+    and other heat mitigation strategies to support evidence-based sustainability planning.
+    </p>
+
+    <h2 class="prose-h2">What I did</h2>
+    <p>
+      
+    Using Google Earth Engine, I processed Landsat imagery to derive land surface temperature 
+    and tree canopy indices across the city. I combined these remote-sensing layers with impervious 
+    surface data, census demographic data, and municipal GIS datasets, including public land ownership, 
+    in ArcGIS Pro to analyze urban heat island patterns at the census block, block group, and neighborhood 
+    scales.
+    From that analysis, I built three interactive ArcGIS Online dashboards, one for each spatial scale, so 
+    that city staff and residents could explore land surface temperature, tree canopy, impervious surfaces, 
+    demographics, and public land ownership together and identify priority areas for heat mitigation.
+
+
+    </p>
+   
+
+    <!-- Inline supporting image -->
+    <figure class="prose-figure">
+      <img src="images/projects/ann-arbor-gis-workflow-diagram.svg"
+           alt="Historic road expansion, rivers, and Level 8 watersheds across the Yurúa–Juruá Amazon borderlands" />
+      <figcaption>The analysis pipeline.</figcaption>
+    </figure>
+
+    <h2 class="prose-h2">What I found</h2>
+    <p>
+    The dashboards revealed clear, block-by-block disparities in heat exposure, closely tied to differences 
+    in tree canopy and impervious surface coverage. Several block emerged as high priorities for tree-planting 
+    and greening investment, where low canopy, high impervious surface, and/or vulnerable communities coincided 
+    with elevated land surface temperature.
+
+    The three dashboards were presented to the City's Parks and Forestry Department, where they are being used to 
+    help inform greening strategies and future tree-planting efforts across the city.
+    </p>
+
+    <h2 class="prose-h2">What I learned</h2>
+    <p>
+    This project showed me how to take remote sensing outputs that only a specialist could interpret and turn them into 
+    interactive tools that non-technical city staff could use directly. I learned how to work across multiple spatial scales 
+    without losing the throughline of the analysis, how to integrate demographic and environmental data responsibly, and how 
+    much of "impact" in GIS work depends on the last step: building something a partner will actually open, understand, and use.
+      
+    </p>
+
   </section>
 
+
+  <!-- LINKS / DELIVERABLES -->
+  <section class="project-links-section">
+    <div class="section-head">
+      <span class="section-num">→</span>
+      <h2 class="section-title">Deliverables</h2>
+    </div>
+    <ul class="link-list">
+      <li>
+        <a href="#" class="link-primary"> Census Block Heat Dashboard →</a>
+        <span class="link-note"> Land surface temperature, canopy, and impervious surface at 
+                                the finest spatial scale. </span>
+      </li>
+      <li>
+        <a href="#" class="link-primary"> Block Group Heat Dashboard →</a>
+        <span class="link-note"> Heat and canopy patterns paired with demographic indicators. </span>
+      </li>
+      <li>
+        <a href="#" class="link-primary"> Neighborhood Heat Dashboard →</a>
+        <span class="link-note"> Land surface temperature, canopy, and impervious surface at 
+                                a larger spatial scale. </span>
+      </li>
+      <li>
+        <a href="#" class="link-primary"> Final Report (PDF) →</a>
+        <span class="link-note">Final report created for the Office of Sustainabilty and Parks and Foestry Departments.</span>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- BACK TO PORTFOLIO -->
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
   </section>
+
 </main>
 
 <footer id="site-footer" class="site-footer"></footer>
+
 <script src="config.js"></script>
 <script src="components.js"></script>
 </body>
