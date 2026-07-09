@@ -70,61 +70,75 @@
 
     <h2 class="prose-h2">The question</h2>
     <p>
-      Jackson Ward is one of the most historically significant Black
-      neighborhoods in the American South, and like many redlined
-      neighborhoods, it has roughly half the tree canopy of
-      whiter-and-wealthier blocks just a few minutes' drive away.
-      The Historic Jackson Ward Association had been advocating for
-      a planting program but lacked a block-by-block picture of where
-      the gap was largest.
+    Roads are one of the primary drivers of environmental change in the
+    Amazon rainforest. As new roads are built, they increase access to
+    previously intact forests, accelerating deforestation, fragmenting
+    ecosystems, and threatening rivers and watersheds that support both
+    biodiversity and Indigenous communities.
     </p>
     <p>
-      I joined the project in summer 2024 to build that picture and
-      to design something the association could actually take into
-      city council meetings.
+    Our research focused on the transboundary Yurúa–Juruá region of Peru,
+    where little spatial information existed on how expanding road
+    networks intersect important river systems. We set out to identify
+    the watersheds most vulnerable to road development and create maps
+    that could support conservation planning and environmental decision-making.
     </p>
 
     <h2 class="prose-h2">What I did</h2>
     <p>
-      I started by stitching together three years of LIDAR-derived
-      canopy data from VGIN with the city's parcel layer. The first
-      challenge was that the canopy raster did not line up cleanly
-      with the parcel polygons, so I built a zonal-statistics pipeline
-      in Python that handled the snapping and computed canopy percent
-      per parcel.
+    Using ArcGIS Pro, I analyzed the relationship between forest roads,
+    rivers, and watersheds throughout the study area. After comparing
+    multiple hydrography datasets, our team selected Peru's National
+    Geographic Institute (IGN) river data because it most accurately
+    represented the region's waterways. We combined these data with
+    HydroSHEDS Level 8 watershed boundaries and historic road datasets
+    dating back to 1987.
     </p>
     <p>
-      From there I aggregated to the block level, computed deviation
-      from the citywide median, and ranked blocks by gap size weighted
-      by population density. The HJWA team and I went through the
-      top-30 list together and adjusted for places where a planting
-      would not actually be feasible (an alley, a railroad cut).
+    I created a 5-kilometer buffer around the road network to identify
+    watersheds potentially affected by nearby development and generated
+    road–river intersection points to locate where infrastructure crossed
+    waterways. Every intersection was verified using high-resolution
+    PLANET satellite imagery before producing maps showing both the
+    complete history of road expansion since 1987 and the current road
+    network in 2024.
     </p>
 
     <!-- Inline supporting image -->
     <figure class="prose-figure">
       <img src="images/projects/watershedmapfullextent.jpg"
-           alt="Diagram showing the pipeline from LIDAR raster to parcel statistics to block ranking" />
+           alt="Historic road expansion, rivers, and Level 8 watersheds across the Yurúa–Juruá Amazon borderlands" />
       <figcaption>The analysis pipeline.</figcaption>
     </figure>
 
     <h2 class="prose-h2">What I found</h2>
     <p>
-      The ten highest-priority blocks are all in the eastern half of
-      the neighborhood, concentrated around 2nd Street. Three of them
-      have less than 4% canopy, against a citywide median of 21%. The
-      final report is now in the hands of the city's urban forestry
-      office, and the first round of plantings happened in November 2024.
+    The analysis identified numerous locations where roads intersect
+    rivers and pass through ecologically significant watersheds,
+    revealing how transportation infrastructure has expanded into
+    increasingly remote areas over the past four decades. Many of the
+    affected watersheds contain high levels of biodiversity and provide
+    critical freshwater resources, making them especially vulnerable to
+    future development.
+      
+    By combining historic road data with watershed analysis, the project
+    provides a spatial framework for identifying conservation priorities,
+    monitoring future road expansion, and supporting organizations working
+    to protect the Amazon rainforest.
     </p>
 
     <h2 class="prose-h2">What I learned</h2>
     <p>
-      The technical analysis turned out to be the easy part. The
-      harder and more interesting part was learning how to present
-      uncertainty to community members who needed to use the results
-      to advocate. The "ranked list" worked far better than the
-      heatmap for that audience, even though the heatmap was the
-      more sophisticated artifact.
+      This project showed me how GIS can transform large, complex datasets
+    into information that is meaningful for decision-makers. Beyond
+    developing technical skills in spatial analysis and remote sensing,
+    I learned the importance of selecting reliable datasets, validating
+    results with satellite imagery, and communicating scientific findings
+    through clear, accessible maps. Presenting this research to government
+    officials, embassies, and United Nations representatives reinforced
+    how effective spatial visualization can support conversations about
+    conservation and sustainable development.
+      
     </p>
 
   </section>
@@ -138,12 +152,14 @@
     </div>
     <ul class="link-list">
       <li>
-        <a href="#" class="link-primary">Interactive map →</a>
-        <span class="link-note">Public web map hosted on GitHub Pages.</span>
+        <a href="#" class="link-primary"> Maps →</a>
+        <span class="link-note">Two maps showing watersheds affected by the UC-105 Road: the current extent (2023) 
+                                and the cumulative historical extent of road impacts (1987–2023).</span>
       </li>
       <li>
-        <a href="#" class="link-primary">GitHub repo →</a>
-        <span class="link-note">Python pipeline, data, and notebooks.</span>
+        <a href="#" class="link-primary"> Research Poster →</a>
+        <span class="link-note">Poster created to present at the 2025 American Association of Gepgraphers conference in Detroit, MI, 
+                                and the University of Richmond's 2025 Arts and Sciences Student Research Symposium.</span>
       </li>
       <li>
         <a href="#" class="link-primary">Final report (PDF) →</a>
