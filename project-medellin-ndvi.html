@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-page="Stitching the Sanborn Atlases of Richmond">Loading...</title>
+<!-- ============================================================ -->
+<!-- EDIT THIS: The page title that shows in the browser tab.     -->
+<!-- ============================================================ -->
+<title data-page="Man-Made Green: Measuring Medellín's Urban Greening Initiative">Loading...</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,20 +15,144 @@
 <body>
 <header id="site-header" class="site-header"></header>
 <main>
+  <!-- ================================================================== -->
+  <!--  EDIT EVERYTHING BELOW. This whole file is one project's case      -->
+  <!--  study. The structure is: header, hero image, the story, methods,  -->
+  <!--  findings, tools, next steps, and a back link.                     -->
+  <!--                                                                    -->
+  <!--  To make a NEW project page: copy this whole file, rename it       -->
+  <!--  (e.g., project-your-name.html), and change everything.            -->
+  <!--                                                                    -->
+  <!--  Then make sure your config.js lists this filename as the          -->
+  <!--  project's "detailPage".                                           -->
+  <!-- ================================================================== -->
+  <!-- PROJECT HEAD -->
   <section class="project-head">
-    <p class="page-eyebrow">Case study</p>
-    <h1 class="page-title">Stitching the Sanborn Atlases of Richmond</h1>
-    <p class="project-subtitle">Georeferenced and mosaicked 1905 Sanborn fire insurance maps.</p>
+    <p class="page-eyebrow">Case study · 2024</p>
+    <h1 class="page-title">Man-Made Green: An Analysis of Urban Planning and Sustainability in Medellín</h1>
+    <p class="project-subtitle">
+      Using Sentinel-2 NDVI time series in Google Earth Engine and ArcGIS
+      Pro to measure whether Medellín's Siembra Aburrá greening initiative
+      actually increased vegetation across the city's neighborhoods.
+    </p>
+    <ul class="project-meta-row">
+      <li><span class="meta-label">Role</span><span class="meta-value">Independent Researcher</span></li>
+      <li><span class="meta-label">Course</span><span class="meta-value">GEOG 360, Environmental Remote Sensing</span></li>
+      <li><span class="meta-label">Timeline</span><span class="meta-value">Fall 2024</span></li>
+      <li><span class="meta-label">Tools</span><span class="meta-value">Google Earth Engine, ArcGIS Pro, Sentinel-2</span></li>
+    </ul>
   </section>
+  <!-- HERO IMAGE / MAP -->
+  <!-- This is the showcase image at the top. Use your best map. -->
+  <!-- For an embedded interactive map, see the iframe snippet in EXTENSIONS.md -->
   <section class="project-hero">
     <figure>
-      <img src="images/projects/sanborn-mosaic-thumb.svg" alt="Stitching the Sanborn Atlases of Richmond" />
+      <img src="images/projects/ndvi-medellin-thumb.jpg"
+           alt="Map comparing mean NDVI across Medellín's neighborhoods between 2015-2016 and 2020-2021." />
+      <figcaption>
+        Mean NDVI by neighborhood in Medellín, comparing the year before
+        the Siembra Aburrá initiative (2015–2016) to the year after its
+        active phase ended (2020–2021).
+      </figcaption>
     </figure>
   </section>
+  <!-- THE STORY (problem -> approach -> what i found) -->
   <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
-    <p>This case study is still being written.</p>
+    <h2 class="prose-h2">The question</h2>
+    <p>
+      Medellín's Siembra Aburrá initiative set out to plant vegetation and
+      expand green space across the city, and the Ministry of the
+      Environment reports having planted over 1.2 million trees since the
+      project began. But the city has never published clear, year-by-year
+      results, making it hard to know whether the initiative actually
+      increased vegetation, and where. I set out to answer that question
+      independently, using remote sensing rather than relying on the
+      city's own reporting.
+    </p>
+    <h2 class="prose-h2">What I did</h2>
+    <p>
+      I used Google Earth Engine to build cloud-masked, median NDVI
+      composites from Sentinel-2 imagery (10 m spatial resolution) for six
+      twelve-month periods running July through June, from 2015 to 2021:
+      one year before the initiative began, four years during its active
+      phase, and one year after. My first attempt at cloud masking left
+      large data gaps once the rasters reached ArcGIS Pro, so I went back
+      into the Earth Engine script and revised the cloud-cover parameters
+      before re-exporting.
+    </p>
+    <p>
+      In ArcGIS Pro, I ran Zonal Statistics against a shapefile of
+      Medellín's urbanized neighborhoods to calculate mean NDVI for each
+      neighborhood, each year. I also reclassified each raster using a 0.2
+      NDVI threshold to flag "high-vegetation" pixels, then summed that
+      area per neighborhood to track vegetated area independently of the
+      mean. Finally, I ran paired t-tests in Excel comparing the 2015–16
+      baseline year against each of the five following years, for both
+      the mean NDVI and the high-vegetation pixel area.
+    </p>
+    <!-- Inline supporting image -->
+    <figure class="prose-figure">
+      <img src="images/projects/medellin_gis_workflow.svg"
+           alt="GIS workflow diagram showing data collection, cloud masking and compositing in Google Earth Engine, zonal statistics in ArcGIS Pro, statistical analysis, and output for the Medellín greening study." />
+      <figcaption>The analysis pipeline.</figcaption>
+    </figure>
+    <h2 class="prose-h2">What I found</h2>
+    <p>
+      Mean NDVI across Medellín rose from 0.538 in 2015–16 to a peak of
+      0.613 in 2017–18, the year immediately following the start of the
+      initiative, a highly significant increase (p = 3.15 × 10⁻⁹⁵). NDVI
+      then dropped to 0.564 in 2018–19, the one year where the change
+      versus baseline came closest to non-significance, before leveling
+      off around 0.59–0.60 through 2020–21. The high-vegetation pixel
+      area told the same story, rising from about 93.7 km² to a peak of
+      100.5 km² in 2017–18 (p = 4.69 × 10⁻³⁹), then dropping to 93.8 km²
+      in 2018–19, the only year that was not significantly different from
+      the 2015–16 baseline by that measure.
+    </p>
+    <p>
+      The 2018–19 dip lines up with the onset of an El Niño drought phase
+      that Colombia's IDEAM had already flagged by late 2018. The
+      neighborhoods with the largest vegetation gains, both across the
+      full study period and at the 2017–18 peak, included Cerro el
+      Volador, El Remanso, and Cerro Nutibara.
+    </p>
+    <h2 class="prose-h2">What I learned</h2>
+    <p>
+      This project taught me that a remote sensing workflow rarely works
+      on the first pass, revising the Earth Engine cloud mask after the
+      initial export failed was a necessary step, not a detour. I also
+      learned the limits of NDVI as a single metric: it can't distinguish
+      newly planted saplings from existing vegetation, or separate a
+      genuine greening signal from the effects of a drought year. Trying
+      to evaluate a public initiative that publishes almost no
+      disaggregated data of its own reinforced how much independent,
+      transparent measurement matters, and how easily a single metric
+      like NDVI can be over-interpreted without acknowledging its
+      limitations in fragmented urban environments.
+    </p>
   </section>
+  <!-- LINKS / DELIVERABLES -->
+  <section class="project-links-section">
+    <div class="section-head">
+      <span class="section-num">→</span>
+      <h2 class="section-title">Deliverables</h2>
+    </div>
+    <ul class="link-list">
+      <li>
+        <a href="#" class="link-primary">Full Research Paper (PDF) →</a>
+        <span class="link-note">Written for GEOG 360: Environmental Remote Sensing, Dr. Stephanie Spera, Fall 2024.</span>
+      </li>
+       <li>
+        <a href="#" class="link-primary"> Maps →</a>
+        <span class="link-note">NDVI Analysis of Medellin's Green Corridors Project.</span>
+      </li>
+      <li>
+        <a href="#" class="link-primary">Works Cited →</a>
+        <span class="link-note">Full reference list, including sources on Siembra Aburrá and Medellín's 2018–19 drought conditions.</span>
+      </li>
+    </ul>
+  </section>
+  <!-- BACK TO PORTFOLIO -->
   <section class="project-back">
     <a href="projects.html" class="link-primary">← Back to all work</a>
   </section>
