@@ -283,10 +283,14 @@ const CONFIG = {
 
 mapGallery: [
   {
-    title:   "Map title here",
-    image:   "images/gallery/your-map-file.jpg",
-    caption: "A sentence or two describing what this map shows and how you made it.",
-    tags:    ["ArcGIS Pro", "Cartography"],
+image:       "images/gallery/bicknells-thrush-new-england.jpg",
+  title:       "Bicknell's Thrush Observations in New England (1999–2019)",
+  course:      "GEOG 365: Advanced Spatial Analysis",
+  date:        "Spring 2025",
+  description: "A point-distribution map of Bicknell's Thrush occurrence records across New England 
+                from 1999–2019, layered over a hillshade and DEM to explore how sightings relate to elevation. 
+                Most observations cluster in the higher-elevation areas of Vermont and New Hampshire, consistent 
+                with the species' known preference for high-elevation evergreen forest.",
   },
   // Copy the block above and paste it again for each additional map.
 ],
