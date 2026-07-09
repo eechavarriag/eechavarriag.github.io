@@ -1,0 +1,95 @@
+<svg viewBox="0 0 820 1330" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, 'Segoe UI', Arial, sans-serif">
+  <title>GIS Analysis Workflow: Road Impacts on Amazon Watersheds</title>
+  <desc>Five-stage pipeline: Data Collection, Data Evaluation, Spatial Analysis in ArcGIS Pro, Validation with satellite imagery, and Output maps with findings on road-river crossings in the Yurua-Jurua Amazon Borderlands.</desc>
+
+  <!-- Title block -->
+  <text x="410" y="45" text-anchor="middle" font-size="30" font-weight="700" fill="#3a1f57">GIS Analysis Workflow</text>
+  <text x="410" y="74" text-anchor="middle" font-size="16" fill="#4a3960">Road Impacts on Amazon Rivers &amp; Watersheds</text>
+  <text x="410" y="96" text-anchor="middle" font-size="13.5" fill="#6b5c80" font-style="italic">Yur&#250;a&#8211;Jur&#250;&#225; Borderlands, Peru</text>
+
+  <!-- ===== CARD 1: Data Collection (140-340) ===== -->
+  <rect x="70" y="140" width="680" height="200" rx="14" fill="#f3ecfb" stroke="#ddc9f0" stroke-width="1.5"/>
+  <rect x="70" y="140" width="6" height="200" rx="3" fill="#6b3fa0"/>
+  <circle cx="140" cy="240" r="34" fill="#6b3fa0"/>
+  <polyline points="120,226 140,234 160,226" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="120,240 140,248 160,240" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="120,254 140,262 160,254" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="195" y="186" font-size="24" font-weight="700" fill="#3a1f57">1. Data Collection</text>
+  <text x="195" y="214" font-size="15" fill="#4a3960">&#8226; Forest roads mapped since 1987 (ABSAT database)</text>
+  <text x="195" y="240" font-size="15" fill="#4a3960">&#8226; River data compared: HydroRIVERS vs. Peru's IGN</text>
+  <text x="195" y="266" font-size="15" fill="#4a3960">&#8226; HydroSHEDS Level 8 basins (SRTM elevation, 2000)</text>
+  <text x="195" y="292" font-size="15" fill="#4a3960">&#8226; PLANET satellite imagery for ground-truthing</text>
+
+  <!-- Arrow 1 -->
+  <line x1="410" y1="340" x2="410" y2="372" stroke="#6b3fa0" stroke-width="3"/>
+  <polygon points="401,371 419,371 410,381" fill="#6b3fa0"/>
+
+  <!-- ===== CARD 2: Data Evaluation (380-580) ===== -->
+  <rect x="70" y="380" width="680" height="200" rx="14" fill="#f3ecfb" stroke="#ddc9f0" stroke-width="1.5"/>
+  <rect x="70" y="380" width="6" height="200" rx="3" fill="#6b3fa0"/>
+  <circle cx="140" cy="480" r="34" fill="#6b3fa0"/>
+  <circle cx="132" cy="480" r="13" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="148" cy="480" r="13" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M136,480 L140,484 L147,473" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="195" y="426" font-size="24" font-weight="700" fill="#3a1f57">2. Data Evaluation</text>
+  <text x="195" y="454" font-size="15" fill="#4a3960">&#8226; Compared HydroRIVERS to Peru's IGN river charts</text>
+  <text x="195" y="480" font-size="15" fill="#4a3960">&#8226; Selected IGN data &#8212; most accurate for the region</text>
+  <text x="195" y="506" font-size="15" fill="#4a3960">&#8226; Reprojected all layers to WGS 1984 UTM Zone 18S</text>
+
+  <!-- Arrow 2 -->
+  <line x1="410" y1="580" x2="410" y2="612" stroke="#6b3fa0" stroke-width="3"/>
+  <polygon points="401,611 419,611 410,621" fill="#6b3fa0"/>
+
+  <!-- ===== CARD 3: Spatial Analysis (620-820) ===== -->
+  <rect x="70" y="620" width="680" height="200" rx="14" fill="#f3ecfb" stroke="#ddc9f0" stroke-width="1.5"/>
+  <rect x="70" y="620" width="6" height="200" rx="3" fill="#6b3fa0"/>
+  <circle cx="140" cy="720" r="34" fill="#6b3fa0"/>
+  <circle cx="140" cy="720" r="20" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="122" y1="732" x2="158" y2="708" stroke="#ffffff" stroke-width="2.3"/>
+  <path d="M122,712 Q131,700 140,712 T158,712" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="140" cy="716" r="3" fill="#ffffff"/>
+  <text x="195" y="666" font-size="24" font-weight="700" fill="#3a1f57">3. Spatial Analysis</text>
+  <text x="195" y="694" font-size="15" fill="#4a3960">&#8226; ArcGIS Pro 3.1 &#8212; built a 5 km buffer around roads</text>
+  <text x="195" y="720" font-size="15" fill="#4a3960">&#8226; Selected Level 8 basins intersected by the buffer</text>
+  <text x="195" y="746" font-size="15" fill="#4a3960">&#8226; Generated road&#8211;river intersection points</text>
+
+  <!-- Arrow 3 -->
+  <line x1="410" y1="820" x2="410" y2="852" stroke="#6b3fa0" stroke-width="3"/>
+  <polygon points="401,851 419,851 410,861" fill="#6b3fa0"/>
+
+  <!-- ===== CARD 4: Validation (860-1000) ===== -->
+  <rect x="70" y="860" width="680" height="140" rx="14" fill="#f3ecfb" stroke="#ddc9f0" stroke-width="1.5"/>
+  <rect x="70" y="860" width="6" height="140" rx="3" fill="#6b3fa0"/>
+  <circle cx="140" cy="930" r="34" fill="#6b3fa0"/>
+  <rect x="124" y="914" width="32" height="32" rx="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M130,930 L137,937 L150,920" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="195" y="906" font-size="24" font-weight="700" fill="#3a1f57">4. Validation</text>
+  <text x="195" y="934" font-size="15" fill="#4a3960">&#8226; Checked every intersection point manually</text>
+  <text x="195" y="960" font-size="15" fill="#4a3960">&#8226; Verified against Sept. 2022 PLANET satellite imagery</text>
+
+  <!-- Arrow 4 -->
+  <line x1="410" y1="1000" x2="410" y2="1032" stroke="#6b3fa0" stroke-width="3"/>
+  <polygon points="401,1031 419,1031 410,1041" fill="#6b3fa0"/>
+
+  <!-- ===== CARD 5: Output & Findings (1040-1260) ===== -->
+  <rect x="70" y="1040" width="680" height="220" rx="14" fill="#f3ecfb" stroke="#ddc9f0" stroke-width="1.5"/>
+  <rect x="70" y="1040" width="6" height="220" rx="3" fill="#6b3fa0"/>
+  <circle cx="140" cy="1100" r="34" fill="#6b3fa0"/>
+  <rect x="120" y="1084" width="40" height="32" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <line x1="133" y1="1084" x2="133" y2="1116" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="147" y1="1084" x2="147" y2="1116" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="152" cy="1095" r="3" fill="#ffffff"/>
+  <text x="195" y="1086" font-size="24" font-weight="700" fill="#3a1f57">5. Output &amp; Findings</text>
+  <text x="195" y="1114" font-size="15" fill="#4a3960">&#8226; Mapped road history (1987&#8211;2023) and 2024 network</text>
+
+  <rect x="195" y="1140" width="255" height="70" rx="8" fill="#ede0f7" stroke="#6b3fa0" stroke-width="1.5"/>
+  <text x="322" y="1170" text-anchor="middle" font-size="18" font-weight="700" fill="#6b3fa0">219 river crossings</text>
+  <text x="322" y="1194" text-anchor="middle" font-size="11.5" fill="#6b5c80">23,829 km&#178; impacted &#183; 1987&#8211;2023</text>
+
+  <rect x="470" y="1140" width="255" height="70" rx="8" fill="#ede0f7" stroke="#6b3fa0" stroke-width="1.5"/>
+  <text x="597" y="1170" text-anchor="middle" font-size="18" font-weight="700" fill="#6b3fa0">137 river crossings</text>
+  <text x="597" y="1194" text-anchor="middle" font-size="11.5" fill="#6b5c80">19,616 km&#178; impacted &#183; 2024</text>
+
+  <!-- Footer -->
+  <text x="410" y="1300" text-anchor="middle" font-size="12" fill="#6b5c80" font-style="italic">Echavarria et al., AAG 2025 Annual Meeting &#183; ABSAT, University of Richmond</text>
+</svg>
