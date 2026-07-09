@@ -1,0 +1,98 @@
+<svg viewBox="0 0 820 1330" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, 'Segoe UI', Arial, sans-serif">
+  <title>GIS Analysis Workflow: Measuring Urban Greening in Medellín, Colombia</title>
+  <desc>Five-stage pipeline: Data Collection, Cloud Masking and Compositing in Google Earth Engine, Zonal Statistics in ArcGIS Pro, Statistical Analysis, and Output and Findings for a study of the Siembra Aburrá greening initiative in Medellín, Colombia using Sentinel-2 NDVI time series.</desc>
+
+  <!-- Title block -->
+  <text x="410" y="45" text-anchor="middle" font-size="30" font-weight="700" fill="#1f5c3a">GIS Analysis Workflow</text>
+  <text x="410" y="74" text-anchor="middle" font-size="16" fill="#33453a">Measuring Urban Greening in Medellín, Colombia</text>
+  <text x="410" y="96" text-anchor="middle" font-size="13.5" fill="#5b6f62" font-style="italic">Siembra Aburrá Initiative &#183; GEOG 360, University of Richmond</text>
+
+  <!-- ===== CARD 1: Data Collection (140-340) ===== -->
+  <rect x="70" y="140" width="680" height="200" rx="14" fill="#eaf6ee" stroke="#cfe6d7" stroke-width="1.5"/>
+  <rect x="70" y="140" width="6" height="200" rx="3" fill="#2f7d4f"/>
+  <circle cx="140" cy="240" r="34" fill="#2f7d4f"/>
+  <polyline points="120,226 140,234 160,226" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="120,240 140,248 160,240" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="120,254 140,262 160,254" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="195" y="186" font-size="24" font-weight="700" fill="#1f5c3a">1. Data Collection</text>
+  <text x="195" y="214" font-size="15" fill="#33453a">&#8226; Sentinel-2 imagery (10 m bands) via Google Earth Engine</text>
+  <text x="195" y="240" font-size="15" fill="#33453a">&#8226; 6 annual composites spanning 2015&#8211;2021 (Jul&#8211;Jun)</text>
+  <text x="195" y="266" font-size="15" fill="#33453a">&#8226; 1 year before, 4 years during, 1 year after the initiative</text>
+  <text x="195" y="292" font-size="15" fill="#33453a">&#8226; Neighborhood boundaries for urbanized Medellín</text>
+
+  <!-- Arrow 1 -->
+  <line x1="410" y1="340" x2="410" y2="372" stroke="#2f7d4f" stroke-width="3"/>
+  <polygon points="401,371 419,371 410,381" fill="#2f7d4f"/>
+
+  <!-- ===== CARD 2: Cloud Masking & Compositing (380-580) ===== -->
+  <rect x="70" y="380" width="680" height="200" rx="14" fill="#eaf6ee" stroke="#cfe6d7" stroke-width="1.5"/>
+  <rect x="70" y="380" width="6" height="200" rx="3" fill="#2f7d4f"/>
+  <circle cx="140" cy="480" r="34" fill="#2f7d4f"/>
+  <rect x="116" y="482" width="48" height="16" rx="8" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="130" cy="478" r="9" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="148" cy="474" r="11" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <line x1="112" y1="498" x2="168" y2="462" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="195" y="426" font-size="24" font-weight="700" fill="#1f5c3a">2. Cloud Masking &amp; Compositing</text>
+  <text x="195" y="454" font-size="15" fill="#33453a">&#8226; Built median NDVI composites for each 12-month period</text>
+  <text x="195" y="480" font-size="15" fill="#33453a">&#8226; Iterated cloud-mask parameters after early runs left gaps</text>
+  <text x="195" y="506" font-size="15" fill="#33453a">&#8226; Focused on Medellín's driest months (Dec&#8211;Mar) where possible</text>
+
+  <!-- Arrow 2 -->
+  <line x1="410" y1="580" x2="410" y2="612" stroke="#2f7d4f" stroke-width="3"/>
+  <polygon points="401,611 419,611 410,621" fill="#2f7d4f"/>
+
+  <!-- ===== CARD 3: Zonal Statistics (620-820) ===== -->
+  <rect x="70" y="620" width="680" height="200" rx="14" fill="#eaf6ee" stroke="#cfe6d7" stroke-width="1.5"/>
+  <rect x="70" y="620" width="6" height="200" rx="3" fill="#2f7d4f"/>
+  <circle cx="140" cy="720" r="34" fill="#2f7d4f"/>
+  <polygon points="164,720 152,740.8 128,740.8 116,720 128,699.2 152,699.2" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="132" cy="712" r="2.8" fill="#ffffff"/>
+  <circle cx="140" cy="720" r="2.8" fill="#ffffff"/>
+  <circle cx="148" cy="728" r="2.8" fill="#ffffff"/>
+  <text x="195" y="666" font-size="24" font-weight="700" fill="#1f5c3a">3. Zonal Statistics</text>
+  <text x="195" y="694" font-size="15" fill="#33453a">&#8226; Computed mean NDVI per neighborhood in ArcGIS Pro</text>
+  <text x="195" y="720" font-size="15" fill="#33453a">&#8226; Reclassified rasters at a 0.2 NDVI threshold</text>
+  <text x="195" y="746" font-size="15" fill="#33453a">&#8226; Summed high-vegetation pixel area per neighborhood, per year</text>
+
+  <!-- Arrow 3 -->
+  <line x1="410" y1="820" x2="410" y2="852" stroke="#2f7d4f" stroke-width="3"/>
+  <polygon points="401,851 419,851 410,861" fill="#2f7d4f"/>
+
+  <!-- ===== CARD 4: Statistical Analysis (860-1000) ===== -->
+  <rect x="70" y="860" width="680" height="140" rx="14" fill="#eaf6ee" stroke="#cfe6d7" stroke-width="1.5"/>
+  <rect x="70" y="860" width="6" height="140" rx="3" fill="#2f7d4f"/>
+  <circle cx="140" cy="930" r="34" fill="#2f7d4f"/>
+  <rect x="122" y="924" width="10" height="22" fill="#ffffff"/>
+  <rect x="145" y="912" width="10" height="34" fill="#ffffff"/>
+  <path d="M122,904 L155,904" stroke="#ffffff" stroke-width="1.6" fill="none"/>
+  <path d="M122,904 L122,908" stroke="#ffffff" stroke-width="1.6"/>
+  <path d="M155,904 L155,908" stroke="#ffffff" stroke-width="1.6"/>
+  <text x="137" y="901" text-anchor="middle" font-size="11" fill="#ffffff">*</text>
+  <text x="195" y="906" font-size="24" font-weight="700" fill="#1f5c3a">4. Statistical Analysis</text>
+  <text x="195" y="934" font-size="15" fill="#33453a">&#8226; Ran paired t-tests (Excel) vs. the 2015&#8211;16 baseline</text>
+  <text x="195" y="960" font-size="15" fill="#33453a">&#8226; Tested both mean NDVI and high-vegetation pixel area</text>
+
+  <!-- Arrow 4 -->
+  <line x1="410" y1="1000" x2="410" y2="1032" stroke="#2f7d4f" stroke-width="3"/>
+  <polygon points="401,1031 419,1031 410,1041" fill="#2f7d4f"/>
+
+  <!-- ===== CARD 5: Output & Findings (1040-1260) ===== -->
+  <rect x="70" y="1040" width="680" height="220" rx="14" fill="#eaf6ee" stroke="#cfe6d7" stroke-width="1.5"/>
+  <rect x="70" y="1040" width="6" height="220" rx="3" fill="#2f7d4f"/>
+  <circle cx="140" cy="1100" r="34" fill="#2f7d4f"/>
+  <polyline points="116,1112 136,1084 148,1104 164,1098" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="136" cy="1084" r="3.5" fill="#ffffff"/>
+  <text x="195" y="1086" font-size="24" font-weight="700" fill="#1f5c3a">5. Output &amp; Findings</text>
+  <text x="195" y="1114" font-size="15" fill="#33453a">&#8226; NDVI rose sharply, dipped in a 2018&#8211;19 drought, then leveled off</text>
+
+  <rect x="195" y="1140" width="255" height="70" rx="8" fill="#e3f3e8" stroke="#2f7d4f" stroke-width="1.5"/>
+  <text x="322" y="1170" text-anchor="middle" font-size="18" font-weight="700" fill="#2f7d4f">0.613 Peak NDVI</text>
+  <text x="322" y="1194" text-anchor="middle" font-size="11.5" fill="#5b6f62">2017&#8211;18, up from 0.538 in 2015&#8211;16</text>
+
+  <rect x="470" y="1140" width="255" height="70" rx="8" fill="#e3f3e8" stroke="#2f7d4f" stroke-width="1.5"/>
+  <text x="597" y="1170" text-anchor="middle" font-size="18" font-weight="700" fill="#2f7d4f">5 Top-Gaining Areas</text>
+  <text x="597" y="1194" text-anchor="middle" font-size="11.5" fill="#5b6f62">Cerro el Volador, El Remanso &amp; more</text>
+
+  <!-- Footer -->
+  <text x="410" y="1300" text-anchor="middle" font-size="12" fill="#5b6f62" font-style="italic">Eugenia Echavarria &#183; GEOG 360, Environmental Remote Sensing &#183; Dec. 2024</text>
+</svg>
