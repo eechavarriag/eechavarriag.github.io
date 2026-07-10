@@ -291,35 +291,35 @@ const CONFIG = {
                     with the species' known preference for high-elevation evergreen forest.`,
     },
    
-     {
-  image:       "images/projects/nepal-earthquake-analysis.jpg",
-  title:       "Impacted Population in Nepal from 2014 Earthquakes",
-  course:      "GEOG 365: Advanced Spatial Analysis",
-  date:        "Spring 2025",
-  description: `A population-density analysis around the epicenters of Nepal's 2014 earthquakes, using 10 km and 
+   {
+     image:       "images/projects/nepal-earthquake-analysis.jpg",
+     title:       "Impacted Population in Nepal from 2014 Earthquakes",
+     course:      "GEOG 365: Advanced Spatial Analysis",
+     date:        "Spring 2025",
+     description: `A population-density analysis around the epicenters of Nepal's 2014 earthquakes, using 10 km and 
                 30 km buffers at a 500-meter cell resolution to estimate the number of people affected: roughly 
                 66,860 within 10 km and 554,674 within 30 km of the earthquake sites.`,
-},
+   },
 
-     {
-  image:       "images/projects/giles-county-pizza-service-areas.jpg",
-  title:       "Pizza Facilities and Where They Deliver Within 15 Minutes in Giles Co, VA",
-  course:      "GEOG 365: Advanced Spatial Analysis",
-  date:        "Spring 2025",
-  description: `A network-based service area analysis identifying the 15-minute drive-time delivery zone around each of 
+   {
+     image:       "images/projects/giles-county-pizza-service-areas.jpg",
+     title:       "Pizza Facilities and Where They Deliver Within 15 Minutes in Giles Co, VA",
+     course:      "GEOG 365: Advanced Spatial Analysis",
+     date:        "Spring 2025",
+     description: `A network-based service area analysis identifying the 15-minute drive-time delivery zone around each of 
                Giles County's five pizza facilities: Pizza Plus (two locations), The Palisades Restaurant, Queen's Pizza 
                and Subs, Papa's Pizzeria and Subs, and Pizza Hut.`,
-},
+   },
 
-     {
-  image:       "images/projects/dc-bivariate-map.jpg",
-  title:       "Non-English Households and Median Income, Washington, D.C. (2021)",
-  course:      "Advanced GIS",
-  date:        "Spring 2025",
-  description: `A bivariate choropleth map exploring the relationship between the percentage of non-English-speaking 
+   {
+     image:       "images/projects/dc-bivariate-map.jpg",
+     title:       "Non-English Households and Median Income, Washington, D.C. (2021)",
+     course:      "Advanced GIS",
+     date:        "Spring 2025",
+     description: `A bivariate choropleth map exploring the relationship between the percentage of non-English-speaking 
                households and median household income across census tracts in the Washington, D.C. area, using 2021 
                American Community Survey (ACS) data.`,
-},
+   },
      
     // Copy the block above and paste it again for each additional map.
   ],
