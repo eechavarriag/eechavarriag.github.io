@@ -314,11 +314,11 @@ const CONFIG = {
    {
      image:       "images/projects/dc-bivariate-map.jpg",
      title:       "Non-English Households and Median Income, Washington, D.C. (2021)",
-     course:      "Advanced GIS",
+     course:      "GEOG 365: Advanced Spatial Analysis",
      date:        "Spring 2025",
      description: `A bivariate choropleth map exploring the relationship between the percentage of non-English-speaking 
-               households and median household income across census tracts in the Washington, D.C. area, using 2021 
-               American Community Survey (ACS) data.`,
+                   households and median household income across census tracts in the Washington, D.C. area, using 2021 
+                   American Community Survey (ACS) data.`,
    },
      
     // Copy the block above and paste it again for each additional map.
