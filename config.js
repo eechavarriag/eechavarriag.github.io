@@ -292,7 +292,7 @@ const CONFIG = {
     },
    
      {
-  image:       "iimages/projects/nepal-earthquake-analysis.jpg",
+  image:       "images/projects/nepal-earthquake-analysis.jpg",
   title:       "Impacted Population in Nepal from 2014 Earthquakes",
   course:      "GEOG 365: Advanced Spatial Analysis",
   date:        "Spring 2025",
