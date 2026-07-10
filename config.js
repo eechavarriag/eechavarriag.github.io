@@ -290,6 +290,17 @@ const CONFIG = {
                     Most observations cluster in the higher-elevation areas of Vermont and New Hampshire, consistent
                     with the species' known preference for high-elevation evergreen forest.`,
     },
+   
+     {
+  image:       "images/projects/nepal-earthquake-analysis.jpg",
+  title:       "Impacted Population in Nepal from 2014 Earthquakes",
+  course:      "GEOG 365: Advanced Spatial Analysis",
+  date:        "Spring 2025",
+  description: `A population-density analysis around the epicenters of Nepal's 2014 earthquakes, using 10 km and 
+                30 km buffers at a 500-meter cell resolution to estimate the number of people affected: roughly 
+                66,860 within 10 km and 554,674 within 30 km of the earthquake sites.`,
+},
+     
     // Copy the block above and paste it again for each additional map.
   ],
 
