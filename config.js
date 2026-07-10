@@ -283,7 +283,7 @@ const CONFIG = {
 
 mapGallery: [
   {
-image:       "images/gallery/bicknells-thrush-new-england.jpg",
+image:       "images/projects/bicknells-thrush-new-england.jpg",
   title:       "Bicknell's Thrush Observations in New England (1999–2019)",
   course:      "GEOG 365: Advanced Spatial Analysis",
   date:        "Spring 2025",
