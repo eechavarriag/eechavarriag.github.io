@@ -1,83 +1,83 @@
 /* ============================================================
    GIS PORTFOLIO TEMPLATE — CONFIG
    ============================================================
- 
+
    This is the ONE file you need to edit to make the site yours.
    Every page on the site reads from here. Change something
    here, and it updates on the homepage, the projects page,
    the about page, and the contact page all at once.
- 
+
    Rules of thumb:
    - Keep the quote marks around each value
    - Keep the commas at the end of each line
    - Don't delete the curly braces { } or square brackets [ ]
- 
+
    ============================================================ */
- 
- 
+
+
 const CONFIG = {
- 
+
   // =========================================================
   // BASICS — name, contact, headshot
   // =========================================================
- 
+
   name: "Eugenia Echavarria",
   tagline: "Environmental Studies, Geography and Data Science and Statistics Student",
   location: "Richmond, Virginia",
- 
+
   email:    "eugenia.echavarria@richmond.edu",
   github:   "https://github.com/eechavarriag",
   linkedin: "https://linkedin.com/in/eugenia-echavarria",
   website:  "",   // leave as "" to hide
- 
+
   headshot: "images/headshot.jpg",
- 
- 
+
+
   // =========================================================
   // SHORT BIO — used on the homepage
   // 1-2 sentences. Keep it punchy.
   // =========================================================
- 
+
   shortBio: `Senior at the University of Richmond majoring in Environmental Studies and Geography
              and minoring in Data Science and Statistics, focused on open spatial data, community
              cartography, and making maps that answer real questions.`,
- 
- 
+
+
   // =========================================================
   // LONG BIO — used on the About page
   // 3-6 paragraphs. Write like a human, not a resume.
   // To split into paragraphs, use \n\n between them.
   // =========================================================
- 
+
   longBio: `I am a senior at the University of Richmond majoring in
             Environmental Studies and Geography with a minor in Data Science
             and Statistics. I am passionate about using GIS, remote sensing,
             and spatial analysis to better understand environmental challenges
             and support more sustainable communities.
- 
+
             Since my freshman year, I have conducted research on development in
             the Amazon rainforest, examining how illegal road expansion influences
             watersheds, deforestation, land surface temperature, evapotranspiration,
             and other environmental processes. My research has been presented to
             government officials, embassies, and representatives of the United Nations
             in Peru.
- 
+
             Most recently, I interned with the City of Ann Arbor's Office of Sustainability
             and Innovations, where I developed a series of urban heat island dashboards
             to identify neighborhoods most vulnerable to extreme summer heat. The dashboards
             were presented to the City's Parks and Forestry Department to help inform greening
             strategies and future tree-planting efforts.
- 
+
             I will graduate in May 2027 and am interested in graduate study or full-time
             opportunities in spatial analysis, urban planning, sustainability, and applied
             environmental research`,
- 
- 
+
+
   // =========================================================
   // EDUCATION — used on the About page
   // Add or remove entries as needed.
   // =========================================================
- 
+
   education: [
     {
       school: "University of Richmond",
@@ -104,12 +104,12 @@ const CONFIG = {
       note:   "Completed a rigorous college-preparatory curriculum with Advanced Placement coursework in Biology, Environmental Science, Chemistry, Physics, Psychology, and Spanish Language. Developed a strong interdisciplinary foundation in the sciences while engaging in an internationally focused education that emphasized global perspectives, critical thinking, cross-cultural collaboration, and real-world problem solving."
     },
   ],
- 
- 
+
+
   // =========================================================
   // EXPERIENCE — used on the About page
   // =========================================================
- 
+
   experience: [
     {
       role:    "Undergraduate Research Fellow",
@@ -120,11 +120,11 @@ const CONFIG = {
                examining the environmental impacts of road development in the southwestern Amazon.
                Using GIS and remote sensing, I analyze changes in watersheds, evapotranspiration,
                land surface temperature, and deforestation along the Brazil–Peru border.
- 
+
                I also create cartographic products supporting environmental and legal initiatives for
                organizations including UNESCO and government agencies in Brazil and Peru, while leading
                English–Spanish translation of project materials to strengthen international collaboration.
- 
+
                My research has been supported by the University of Richmond School of Arts & Sciences Summer
                Research Fellowship (2024 & 2025) and presented at the 2025 and 2026 American Association of
                Geographers (AAG) Annual Meetings and the 2025 and 2026 University of Richmond Arts & Sciences
@@ -139,13 +139,13 @@ const CONFIG = {
                initiatives. Using ArcGIS Pro, ArcGIS Online, and Google Earth Engine, I integrated remote
                sensing, demographic, and municipal GIS datasets to analyze urban heat island patterns and
                identify priority areas for heat mitigation.
- 
+
                A major outcome of the internship was the development and publication of three interactive ArcGIS
                Online dashboards at the census block, block group, and neighborhood scales. These dashboards
                communicate patterns in land surface temperature, tree canopy, impervious surfaces, demographics,
                and public land ownership to support evidence-based planning and community engagement.`
     },
- 
+
     {
       role:    "Spatial Analysis Lab Intern",
       org:     "Spatial Analysis Lab, University of Richmond",
@@ -154,11 +154,11 @@ const CONFIG = {
                and cartographic techniques to coursework and research projects. I provided technical guidance on spatial analysis,
                geoprocessing, raster analysis, coordinate systems, and map design while troubleshooting GIS workflows using ArcGIS Pro
                and ENVI.
- 
+
                I also helped maintain GIS lab resources and promoted effective cartographic communication and data visualization,
                contributing to a collaborative environment that strengthened students' confidence in using geospatial technologies.`
     },
- 
+
     {
       role:    "Teaching Assitant",
       org:     "Latin American, Latino, & Iberian Studies, University of Richmond",
@@ -171,13 +171,13 @@ const CONFIG = {
                problem-solving while fostering an inclusive and supportive learning environment.`
     },
   ],
- 
- 
+
+
   // =========================================================
   // SKILLS — used on the About page
   // Grouped by category. Be honest about what you actually know.
   // =========================================================
- 
+
   skillGroups: [
     {
       label: "Desktop GIS",
@@ -196,8 +196,8 @@ const CONFIG = {
       skills: ["Adobe Illustrator", "Adobe Photoshop", "InkScape"]
     },
   ],
- 
- 
+
+
   // =========================================================
   // PROJECTS — the most important section
   // =========================================================
@@ -212,54 +212,52 @@ const CONFIG = {
   // Mark 3 as featured. The rest show on the projects page only.
   //
   // =========================================================
- 
+
   projects: [
- 
+
     {
       slug:        "urban-heat-ann-arbor",
       title:       "Mapping Urban Heat and Tree Equity in Ann Arbor",
       year:        "2026",
       type:        "GIS & Remote Sensing",
       thumbnail:   "images/projects/ann-arbor-heat-thumb-v2.jpg",
-      blurb:       `Interactive GIS analysis of urban heat island patterns 
-                    in Ann Arbor using Landsat-derived land surface temperature, 
-                    tree canopy, impervious surface, demographic, and municipal 
-                    datasets to identify priority areas for heat mitigation and 
+      blurb:       `Interactive GIS analysis of urban heat island patterns
+                    in Ann Arbor using Landsat-derived land surface temperature,
+                    tree canopy, impervious surface, demographic, and municipal
+                    datasets to identify priority areas for heat mitigation and
                     urban forestry interventions.`,
       tags:        ["ArcGIS Pro", "ArcGIS Online", "Google Earth Engine", "Remote Sensing", "Urban Heat Islands"],
       detailPage:  "project-ann-arbor-heat.html",
       featured:    true,
     },
 
-     
     {
       slug:        "roads-climate-change",
       title:       "Roads to Climate Change: Secondary Roads in Acre-Amazonas, Brazil",
       year:        "2025",
       type:        "Climate & Remote Sensing",
       thumbnail:   "images/projects/roads-climate-thumb.jpg",
-      blurb:       `Three case studies of secondary road networks in the Brazilian Amazon, 
-                    measuring their impact on deforestation, degradation, land surface 
+      blurb:       `Three case studies of secondary road networks in the Brazilian Amazon,
+                    measuring their impact on deforestation, degradation, land surface
                     temperature, and evapotranspiration from 2003 to 2024.`,
-      tags:      ["ArcGIS Pro", "Remote Sensing", "MODIS", "Climate Science"],
+      tags:        ["ArcGIS Pro", "Remote Sensing", "MODIS", "Climate Science"],
       detailPage:  "project-roads-climate-change.html",
       featured:    true,
     },
 
-   {
+    {
       slug:        "watershed-impacts",
       title:       "Road Building Impacts on the Rivers and Watersheds of the Yurúa-Juruá Amazon Borderlands",
       year:        "2024",
       type:        "Land Use & Land Cover Analysis",
       thumbnail:   "images/projects/watershedmapfullextent.jpg",
-      blurb:       `A spatial analysis of illegal road development in the Peruvian Amazon, measuring its impacts 
+      blurb:       `A spatial analysis of illegal road development in the Peruvian Amazon, measuring its impacts
                     on watersheds, rivers, and environmentally significant landscapes to support conservation efforts.`,
       tags:        ["ArcGIS Pro", "Remote Sensing", "Hydrology", "Environmental Monitoring"],
       detailPage:  "project-watersheds.html",
       featured:    true,
     },
- 
-    // Example of a non-featured project (will appear on /projects only):
+
     {
       slug:        "medellin-ndvi",
       title:       "Man-made green: An analysis of urban planning and sustainability in Medellín (Colombia)",
@@ -274,48 +272,45 @@ const CONFIG = {
       detailPage:  "project-medellin-ndvi.html",
       featured:    false,
     },
- 
+
   ],
 
-   // =========================================================
-// MAP GALLERY — standalone maps that aren't full case studies
-// =========================================================
+  // =========================================================
+  // MAP GALLERY — standalone maps that aren't full case studies
+  // =========================================================
 
-mapGallery: [
-  {
-image:       "images/projects/bicknells-thrush-new-england.jpg",
-  title:       "Bicknell's Thrush Observations in New England (1999–2019)",
-  course:      "GEOG 365: Advanced Spatial Analysis",
-  date:        "Spring 2025",
-  description: "A point-distribution map of Bicknell's Thrush occurrence records across New England 
-                from 1999–2019, layered over a hillshade and DEM to explore how sightings relate to elevation. 
-                Most observations cluster in the higher-elevation areas of Vermont and New Hampshire, consistent 
-                with the species' known preference for high-elevation evergreen forest.",
-  },
-  // Copy the block above and paste it again for each additional map.
-],
- 
+  mapGallery: [
+    {
+      image:       "images/projects/bicknells-thrush-new-england.jpg",
+      title:       "Bicknell's Thrush Observations in New England (1999–2019)",
+      course:      "GEOG 365: Advanced Spatial Analysis",
+      date:        "Spring 2025",
+      description: `A point-distribution map of Bicknell's Thrush occurrence records across New England
+                    from 1999–2019, layered over a hillshade and DEM to explore how sightings relate to elevation.
+                    Most observations cluster in the higher-elevation areas of Vermont and New Hampshire, consistent
+                    with the species' known preference for high-elevation evergreen forest.`,
+    },
+    // Copy the block above and paste it again for each additional map.
+  ],
+
+
   // =========================================================
   // CONTACT PAGE — what to say on the contact page
   // =========================================================
- 
+
   contactLead: `I'm always open to connecting about GIS, spatial analysis, urban planning,
                and sustainability, and I welcome conversations about research, collaboration,
                and full-time opportunities starting in May 2027.`,
- 
- 
+
+
   // =========================================================
   // SITE — small details
   // =========================================================
- 
+
   // Used in browser tab and site footer
   siteTitle: "Portfolio",
- 
+
   // Year on the footer copyright; "auto" uses the current year
   footerYear: "auto",
- 
+
 };
- 
- 
-
-
