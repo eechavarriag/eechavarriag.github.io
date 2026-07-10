@@ -281,7 +281,7 @@ const CONFIG = {
 
   mapGallery: [
     {
-      image:       "images/projects/bicknells-thrush-new-england.jpg",
+      image:       "images/projects/bicknell-observation-elevation.jpg",
       title:       "Bicknell's Thrush Observations in New England (1999–2019)",
       course:      "GEOG 365: Advanced Spatial Analysis",
       date:        "Spring 2025",
@@ -290,6 +290,17 @@ const CONFIG = {
                     Most observations cluster in the higher-elevation areas of Vermont and New Hampshire, consistent
                     with the species' known preference for high-elevation evergreen forest.`,
     },
+
+    {
+      image:       "images/projects/bicknell-observations-habitat.jpg",
+      title:       "Bicknell's Thrush Observations in White Mountain National Forest, NH (1999–2019)",
+      course:      "GEOG 365: Advanced Spatial Analysis",
+      date:        "Spring 2025",
+      description: `A regional zoom-in on White Mountain National Forest, New Hampshire, overlaying Bicknell's 
+                    Thrush sightings on a modeled suitable habitat layer (land within 200 meters of evergreen forest 
+                    above 600 meters elevation). Sightings closely track the mapped habitat, reinforcing the species' 
+                    strong preference for high-elevation evergreen forest.`,
+   },
    
    {
      image:       "images/projects/nepal-earthquake-analysis.jpg",
