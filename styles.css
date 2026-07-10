@@ -948,3 +948,96 @@ section {
   .contact-lead, .intro-text { font-size: 21px; }
   .project-meta-row { grid-template-columns: 1fr 1fr; gap: 16px; }
 }
+
+/* ============================================================
+   MAP GALLERY
+   ============================================================ */
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.gallery-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 8px;
+  margin: -8px;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.gallery-card:hover {
+  background: var(--bg-alt);
+}
+
+.gallery-card:nth-child(even) .gallery-image { order: 2; }
+
+.gallery-image {
+  border: 1px solid var(--rule);
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  max-height: 480px;
+  overflow: hidden;
+}
+
+.gallery-image img {
+  width: 100%;
+  max-height: 456px;
+  object-fit: contain;
+  display: block;
+}
+
+.gallery-body { padding-top: 8px; }
+
+.gallery-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 18px;
+}
+
+.gallery-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+
+.gallery-card:hover .gallery-title { color: var(--accent); }
+
+.gallery-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  max-width: 460px;
+}
+
+.gallery-cta {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 860px) {
+  .gallery-card { grid-template-columns: 1fr; gap: 24px; }
+  .gallery-card:nth-child(even) .gallery-image { order: 0; }
+}
