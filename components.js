@@ -173,15 +173,19 @@
     const host = $('[data-bind=mapGallery]');
     if (!host || !Array.isArray(CONFIG.mapGallery)) return;
     host.innerHTML = CONFIG.mapGallery.map(function (m) {
+      const href = m.pdf || m.image;
       return (
-        '<figure class="gallery-card">' +
-          '<img src="' + escapeHTML(m.image) + '" alt="' + escapeHTML(m.title || '') + '" loading="lazy" />' +
-          '<figcaption>' +
-            '<h3>' + escapeHTML(m.title || '') + '</h3>' +
+        '<a class="gallery-card" href="' + escapeHTML(href) + '" target="_blank" rel="noopener">' +
+          '<div class="gallery-image">' +
+            '<img src="' + escapeHTML(m.image) + '" alt="' + escapeHTML(m.title || '') + '" loading="lazy" />' +
+          '</div>' +
+          '<div class="gallery-body">' +
             '<p class="gallery-meta">' + escapeHTML(m.course || '') + ' &middot; ' + escapeHTML(m.date || '') + '</p>' +
-            '<p>' + escapeHTML(m.description || '') + '</p>' +
-          '</figcaption>' +
-        '</figure>'
+            '<h3 class="gallery-title">' + escapeHTML(m.title || '') + '</h3>' +
+            '<p class="gallery-description">' + escapeHTML(m.description || '') + '</p>' +
+            '<span class="gallery-cta">View full map →</span>' +
+          '</div>' +
+        '</a>'
       );
     }).join('');
   }
