@@ -846,6 +846,24 @@ section {
   padding: 30px 48px 80px;
 }
 
+.project-poster-section { margin: 60px 0; }
+.project-figure { margin: 0; }
+.project-figure img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--rule);
+}
+.figure-caption {
+  max-width: 900px;
+  margin: 16px auto 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  text-align: center;
+}
 
 /* ============================================================
    LINK STYLES
@@ -1042,21 +1060,3 @@ section {
   .gallery-card:nth-child(even) .gallery-image { order: 0; }
 }
 
-.project-poster-section { margin: 60px 0; }
-.project-figure { margin: 0; }
-.project-figure img {
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  margin: 0 auto;
-  border: 1px solid var(--rule);
-}
-.figure-caption {
-  max-width: 900px;
-  margin: 16px auto 0;
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--ink-soft);
-  text-align: center;
-}
