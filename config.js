@@ -331,6 +331,15 @@ const CONFIG = {
                    households and median household income across census tracts in the Washington, D.C. area, using 2021 
                    American Community Survey (ACS) data.`,
    },
+
+ {
+     image:       "images/projects/annarborstudyarea.jpg",
+     title:       "Study Area: City of Ann Arbor, Michigan",
+     course:      "GIS Intern, City of Ann Arbor",
+     date:        "Summer 2026",
+     description: `Map of the Ann Arbor city boundary used as the study area for urban heat island and tree canopy analyses 
+                   conducted during my GIS internship with the City of Ann Arbor's Office of Sustainability and Innovations.`,
+   },
      
     // Copy the block above and paste it again for each additional map.
   ],
