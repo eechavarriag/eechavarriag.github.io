@@ -332,7 +332,7 @@ const CONFIG = {
                    American Community Survey (ACS) data.`,
    },
 
- {
+   {
      image:       "images/projects/annarborstudyarea.jpg",
      title:       "Study Area: City of Ann Arbor, Michigan",
      course:      "GIS Intern, City of Ann Arbor",
