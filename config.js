@@ -145,11 +145,24 @@ const CONFIG = {
                communicate patterns in land surface temperature, tree canopy, impervious surfaces, demographics,
                and public land ownership to support evidence-based planning and community engagement.`
     },
-
+     
     {
-      role:    "Spatial Analysis Lab Intern",
+      role:    "Climate Action and Strategy Planning Intern",
+      org:     "Office of Sustainability, University of Richmond",
+      years:   "Fall 2026",
+      blurb:   `As a Climate Action and Strategy Planning Intern with the University of Richmond’s Office for Sustainability, 
+                I support the implementation of the university’s Path to 2027 climate initiatives by coordinating responsibilities 
+                across departments and stakeholders. My work includes tracking greenhouse gas emissions, supporting data collection 
+                and reporting, communicating findings and data needs to stakeholders, and monitoring progress toward climate action 
+                goals. I also help coordinate project milestones through scheduling, follow-up, and documentation to keep initiatives
+                moving forward.
+`
+    },
+     
+    {
+      role:    "Spatial Analysis Lab Intern - Campus Data Manager",
       org:     "Spatial Analysis Lab, University of Richmond",
-      years:   "Spring 2026",
+      years:   "Spring 2026 - Present",
       blurb:   `As an intern of the Spatial Analysis Lab, I supported students and faculty in applying GIS, remote sensing,
                and cartographic techniques to coursework and research projects. I provided technical guidance on spatial analysis,
                geoprocessing, raster analysis, coordinate systems, and map design while troubleshooting GIS workflows using ArcGIS Pro
