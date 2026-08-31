@@ -314,7 +314,18 @@ const CONFIG = {
                     above 600 meters elevation). Sightings closely track the mapped habitat, reinforcing the species' 
                     strong preference for high-elevation evergreen forest.`,
    },
-   
+
+   {
+     image:       "images/projects/MetaTreeCanopy_NoText.jpg",
+     title:       "Forest Canopy Height Across California",
+     course:      "GEOG 248: Cartography",
+     date:        "Fall 2026",
+     description: `This map visualizes the spatial distribution of forest canopy height across California using 
+                   Meta and WRI’s high-resolution canopy height dataset. The map highlights regional patterns in 
+                   vegetation structure and demonstrates GIS techniques for raster visualization, cartographic design, 
+                   and spatial communication.`,
+   },
+     
    {
      image:       "images/projects/nepal-earthquake-analysis.jpg",
      title:       "Impacted Population in Nepal from 2014 Earthquakes",
