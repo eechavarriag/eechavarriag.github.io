@@ -325,6 +325,15 @@ const CONFIG = {
                    vegetation structure and demonstrates GIS techniques for raster visualization, cartographic design, 
                    and spatial communication.`,
    },
+
+   {
+     image:       "images/projects/campus-map-notext.jpg",
+     title:       "Memorial Gardens at the University of Richmond",
+     course:      "GEOG 248: Cartography",
+     date:        "Fall 2026",
+     description: `A student-centered map exploring the memorial gardens of the University of Richmond and the ways campus 
+                   landscapes preserve memory, honor community members, and create spaces for reflection.`,
+   },
      
    {
      image:       "images/projects/nepal-earthquake-analysis.jpg",
