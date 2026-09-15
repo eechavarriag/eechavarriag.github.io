@@ -182,7 +182,7 @@
           '<div class="gallery-body">' +
             '<p class="gallery-meta">' + escapeHTML(m.course || '') + ' &middot; ' + escapeHTML(m.date || '') + '</p>' +
             '<h3 class="gallery-title">' + escapeHTML(m.title || '') + '</h3>' +
-            '<p class="gallery-description">' + escapeHTML(m.description || '') + '</p>' +
+            '<p class="gallery-description">' + (m.description || '') + '</p>' +
             '<span class="gallery-cta">View full map →</span>' +
           '</div>' +
         '</a>'
