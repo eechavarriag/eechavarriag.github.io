@@ -334,6 +334,25 @@ const CONFIG = {
      description: `A student-centered map exploring the memorial gardens of the University of Richmond and the ways campus 
                    landscapes preserve memory, honor community members, and create spaces for reflection.`,
    },
+
+   {
+     image:       "images/projects/ArcticSeaIceDecline.png",
+     title:       "Arctic Sea Ice Decline",
+     course:      "GEOG 248: Cartography",
+     date:        "Fall 2026",
+     description: `This map visualizes the decline of Arctic sea ice extent over time, using symbology, labeling, 
+                   and layout techniques to communicate a clear climate trend. It was created as a cartographic 
+                   exercise following Esri's "Cartographic Creations in ArcGIS Pro" tutorial path by Heather Smith, 
+                   a five-part lesson series covering map projection and data exploration, symbology refinement, 
+                   labeling and annotation, layout and legend design, and inset map creation. I replicated the 
+                   tutorial's workflow directly in ArcGIS Pro, following its instructions for map design, symbology, 
+                   labeling, and layout. No substantive changes were made to the tutorial's workflow or final design. 
+                   This exercise provided hands-on practice with ArcGIS Pro's cartographic tools and techniques, from 
+                   choosing an appropriate projection through final map layout.
+
+                    Tutorial: Heather Smith, Esri, "Cartographic Creations in ArcGIS Pro." 
+                    <a href="https://learn.arcgis.com/en/paths/cartographic-creations-in-arcgis-pro/" target="_blank" rel="noopener" class="link-primary">View the Esri tutorial</a>`,
+   },
      
    {
      image:       "images/projects/nepal-earthquake-analysis.jpg",
