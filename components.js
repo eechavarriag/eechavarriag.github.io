@@ -169,26 +169,26 @@
 
   // ---- Map Gallery (standalone maps that aren't full case studies) --
 
-function renderMapGallery() {
-  const host = $('[data-bind=mapGallery]');
-  if (!host || !Array.isArray(CONFIG.mapGallery)) return;
-  host.innerHTML = CONFIG.mapGallery.map(function (m) {
-    const href = m.pdf || m.image;
-    return (
-      '<div class="gallery-card">' +
-        '<a class="gallery-image" href="' + escapeHTML(href) + '" target="_blank" rel="noopener">' +
-          '<img src="' + escapeHTML(m.image) + '" alt="' + escapeHTML(m.title || '') + '" loading="lazy" />' +
-        '</a>' +
-        '<div class="gallery-body">' +
-          '<p class="gallery-meta">' + escapeHTML(m.course || '') + ' &middot; ' + escapeHTML(m.date || '') + '</p>' +
-          '<h3 class="gallery-title">' + escapeHTML(m.title || '') + '</h3>' +
-          '<p class="gallery-description">' + (m.description || '') + '</p>' +
-          '<a class="gallery-cta" href="' + escapeHTML(href) + '" target="_blank" rel="noopener">View full map →</a>' +
-        '</div>' +
-      '</div>'
-    );
-  }).join('');
-}
+  function renderMapGallery() {
+    const host = $('[data-bind=mapGallery]');
+    if (!host || !Array.isArray(CONFIG.mapGallery)) return;
+    host.innerHTML = CONFIG.mapGallery.map(function (m) {
+      const href = m.pdf || m.image;
+      return (
+        '<div class="gallery-card">' +
+          '<a class="gallery-image" href="' + escapeHTML(href) + '" target="_blank" rel="noopener">' +
+            '<img src="' + escapeHTML(m.image) + '" alt="' + escapeHTML(m.title || '') + '" loading="lazy" />' +
+          '</a>' +
+          '<div class="gallery-body">' +
+            '<p class="gallery-meta">' + escapeHTML(m.course || '') + ' &middot; ' + escapeHTML(m.date || '') + '</p>' +
+            '<h3 class="gallery-title">' + escapeHTML(m.title || '') + '</h3>' +
+            '<p class="gallery-description">' + (m.description || '') + '</p>' +
+            '<a class="gallery-cta" href="' + escapeHTML(href) + '" target="_blank" rel="noopener">View full map →</a>' +
+          '</div>' +
+        '</div>'
+      );
+    }).join('');
+  }
 
 
   // ---- About page sections (bio, education, experience, skills) ---
