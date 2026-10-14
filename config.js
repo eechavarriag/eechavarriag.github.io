@@ -316,6 +316,21 @@ const CONFIG = {
    },
 
    {
+     image:       "images/projects/richmond-district-1-profile.jpg",
+     title:       "Richmond, VA by the Numbers: District 1",
+     course:      "GEOG 248: Cartography",
+     date:        "October 2026",
+     description: `A one-page demographic profile of Richmond's 1st City Council District (the West End), designed for a cartography class. 
+                   The audience is neighborhoodresidents who may not know which district they live in, or how to use data when advocating 
+                   for capital improvements to their councilor or mayor. The profile pairs a locator map and neighborhood list with a 
+                   population-by-race chart, a homeownership comparison (62.5% of District 1 households own their homes, 
+                   versus 43.2% citywide), a block group median household income map, and an education chart showing that 
+                   80.3% of adults hold a bachelor's degree or higher, compared with 44.1% citywide. Data come from the U.S. 
+                   Census Bureau's American Community Survey 5-Year Estimates, the City of Richmond GeoHub, and Richmond Public 
+                   Library. Made in ArcGIS Pro, with the final layout designed as part of a series of nine district profiles.`,
+   },
+     
+   {
      image:       "images/projects/MetaTreeCanopy_NoText.jpg",
      title:       "Forest Canopy Height Across California",
      course:      "GEOG 248: Cartography",
